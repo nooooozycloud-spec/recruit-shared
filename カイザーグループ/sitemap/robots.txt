@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+Sitemap: https://kaiser-recruit.com/sitemap.xml
+Sitemap: https://kaiser-recruit.com/sitemap.rss

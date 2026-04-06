@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>参考サイト分析資料｜一覧（求人サイト見積もり用）</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --text: #1a1a1a;
+      --muted: #5c5c5c;
+      --border: #e0e0e0;
+      --accent: #1e3a5f;
+      --bg: #fafafa;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Noto Sans CJK JP", Meiryo, sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+      color: var(--text);
+      background: var(--bg);
+    }
+    .sheet {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 3rem;
+      background: #fff;
+      min-height: 100vh;
+      box-shadow: 0 0 0 1px var(--border);
+    }
+    h1 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin: 0 0 0.5rem;
+      color: var(--accent);
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 0.5rem;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 2rem;
+    }
+    .cards {
+      display: grid;
+      gap: 1rem;
+    }
+    @media (min-width: 640px) {
+      .cards { grid-template-columns: 1fr 1fr; }
+    }
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1.25rem 1.35rem;
+      background: #f9fafb;
+      transition: box-shadow 0.15s ease;
+    }
+    .card:hover {
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .card h2 {
+      font-size: 1.05rem;
+      margin: 0 0 0.5rem;
+      color: var(--accent);
+      font-weight: 700;
+    }
+    .card p {
+      font-size: 0.92rem;
+      color: var(--muted);
+      margin: 0 0 1rem;
+    }
+    .card a {
+      display: inline-block;
+      font-weight: 600;
+      color: #0b57d0;
+      text-decoration: none;
+    }
+    .card a:hover { text-decoration: underline; }
+    .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--muted);
+      background: #eef2f6;
+      padding: 0.15rem 0.5rem;
+      border-radius: 3px;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <article class="sheet">
+    <h1>参考サイト分析資料（一覧）</h1>
+    <p class="meta">キャバクラ求人サイト制作の見積もり・要件整理用。各ブランドの公開Web情報に基づく整理（2026年4月時点）。</p>
+
+    <div class="cards">
+      <section class="card">
+        <span class="tag">カイザーグループ</span>
+        <h2>KAISER</h2>
+        <p>スタッフ採用（kaiser-recruit.com）とキャスト採用（kaiser-castrecruit.com）の2系統。店舗テンプレ、ニュース、インタビュー、AI採用チャット等。</p>
+        <a href="カイザーグループ/kaiser_index.html">資料を開く →</a>
+      </section>
+      <section class="card">
+        <span class="tag">シティーグループ</span>
+        <h2>CITY GROUP</h2>
+        <p>国内採用LP（citygroup-s.com）に加え、海外・沖縄向け（recruit.citygroup-global.com）。リゾキャバ訴求、エリア別下層、LINE応募等。</p>
+        <a href="シティーグループ/city_index.html">資料を開く →</a>
+      </section>
+    </div>
+  </article>
+</body>
+</html>

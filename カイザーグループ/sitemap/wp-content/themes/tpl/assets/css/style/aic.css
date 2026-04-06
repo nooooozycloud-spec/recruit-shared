@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+/*==============20230803==============*/
+
+.tab-item {
+  max-width: calc(100% / 4 - 9px);
+}
+
+@media screen and (max-width: 768px) {
+  .tab-item {
+    max-width: calc(100% / 4 - 3px);
+  }
+}
+
+/*==============20240604==============*/
+.form-inner dl:last-of-type {
+  margin-bottom: 0;
+}
+.form .consent {
+  margin-bottom: 24px;
+}
+.form .consent a {
+  text-decoration: underline;
+}
+.form .sub_ttl {
+  margin-top: 80px;
+}
+.form .privacy_sc {
+  margin-bottom: 0;
+}
+
+/*==============20240902==============*/
+.bannerPresent-wrap {
+  position: fixed;
+  bottom: 26px;
+  right: 230px;
+  z-index: 99;
+}
+
+.bannerPresent {
+  position: relative;
+  display: block;
+}
+
+@media screen and (max-width: 960px) {
+  .bannerPresent-wrap {
+    right: 32px;
+    bottom: 220px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .bannerPresent-wrap {
+    bottom: inherit;
+    top: 72px;
+    left: 0;
+    right: 0;
+  }
+
+  .bannerPresent img {
+    width: 100%;
+  }
+}
+
+.bannerPresent-btn {
+  position: absolute;
+  bottom: -24px;
+  right: 0;
+  z-index: 99;
+}
+
+@media screen and (min-width: 768px) {
+  .bannerPresent-btn {
+    display: none;
+  }
+}
+
+.humburger-banner {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.humburger-banner img {
+  width: 100%;
+}
+
+.form-banner {
+  display: block;
+  width: fit-content;
+  margin: 0 auto 32px;
+}
+
+/*==============20241021==============*/
+
+.coming-soon {
+  text-decoration: none!important;
+}
+
+.coming-soon::after {
+  display: none!important;
+}

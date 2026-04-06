@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>参考サイト分析資料｜シティーグループ（CITY GROUP）求人サイト</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --text: #1a1a1a;
+      --muted: #5c5c5c;
+      --border: #e0e0e0;
+      --accent: #2d4a55;
+      --bg: #fafafa;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Noto Sans CJK JP", Meiryo, sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+      color: var(--text);
+      background: var(--bg);
+    }
+    .sheet {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 3rem;
+      background: #fff;
+      min-height: 100vh;
+      box-shadow: 0 0 0 1px var(--border);
+    }
+    @media print {
+      body { background: #fff; }
+      .sheet { box-shadow: none; padding: 1rem; }
+      a { color: inherit; text-decoration: none; }
+      .nav-doc { display: none; }
+    }
+    .nav-doc {
+      font-size: 0.88rem;
+      margin: 0 0 1.25rem;
+      padding: 0.65rem 0.9rem;
+      background: #f0f4f6;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+    }
+    .nav-doc a { color: #0b57d0; text-decoration: none; }
+    .nav-doc a:hover { text-decoration: underline; }
+    .nav-doc .nav-sep { color: var(--muted); margin: 0 0.4rem; }
+    .nav-current { font-weight: 600; color: var(--accent); }
+    h1 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin: 0 0 0.25rem;
+      color: var(--accent);
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 0.5rem;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 2rem;
+    }
+    h2 {
+      font-size: 1.05rem;
+      margin: 2rem 0 0.75rem;
+      padding-left: 0.5rem;
+      border-left: 4px solid var(--accent);
+    }
+    h3 {
+      font-size: 0.95rem;
+      margin: 1.25rem 0 0.5rem;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    p { margin: 0.5rem 0; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+      margin: 0.75rem 0;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 0.5rem 0.65rem;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: #f3f5f7; font-weight: 600; width: 28%; }
+    thead th { width: auto; }
+    .col-page { width: 11%; min-width: 5.5rem; }
+    .col-link { width: 26%; word-break: break-all; }
+    .col-design, .col-system {
+      width: 10%;
+      min-width: 6.5rem;
+      font-size: 0.88rem;
+      line-height: 1.55;
+      white-space: nowrap;
+    }
+    @media (max-width: 900px) {
+      .col-design, .col-system { white-space: normal; }
+    }
+    .col-no { width: 2.5rem; text-align: center; }
+    .note {
+      font-size: 0.88rem;
+      color: var(--muted);
+      background: #f7f8fa;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-top: 0.75rem;
+    }
+    a { color: #0b57d0; }
+    td a { word-break: break-all; }
+  </style>
+</head>
+<body>
+  <article class="sheet">
+    <nav class="nav-doc" aria-label="参考資料の移動">
+      <a href="../index.html">一覧</a>
+      <span class="nav-sep" aria-hidden="true">·</span>
+      <a href="../カイザーグループ/kaiser_index.html">KAISER</a>
+      <span class="nav-sep" aria-hidden="true">·</span>
+      <span class="nav-current" aria-current="page">シティーグループ</span>
+    </nav>
+
+    <h1>参考サイト分析資料<br><span style="font-size:0.85em;font-weight:500;">シティーグループ（CITY GROUP）求人サイト</span></h1>
+    <p class="meta">用途：キャバクラ求人サイト制作の見積もり・要件整理　／　公開Web情報に基づく整理（2026年4月時点）</p>
+
+    <h2>1. 概要</h2>
+    <table>
+      <tr>
+        <th>運営</th>
+        <td>City Group Co.,Ltd.（サイト表記に基づく）</td>
+      </tr>
+      <tr>
+        <th>業態・規模感</th>
+        <td>国内（札幌・函館・千葉・銀座・沖縄等）に加え、海外（シンガポール・香港・タイ・ベトナム等）を含む<strong>グローバル展開</strong>を訴求。高級クラブからガールズバーまで複数業態。</td>
+      </tr>
+      <tr>
+        <th>訴求トーン</th>
+        <td>「世界の夜はシティーグループ」「リゾキャバ・外キャバ」など、<strong>海外・リゾート・高収入・教育／福利厚生</strong>を前面に出したランディング型の採用コンテンツ。</td>
+      </tr>
+    </table>
+    <p class="note">KAISERのようにスタッフ用とキャスト用で<strong>ドメインが完全分離</strong>されているのではなく、<strong>国内は1ドメイン内の採用LP＋エントリー</strong>、<strong>海外・沖縄は別ドメインの専用サイト</strong>という構成が特徴。見積もりでは「国内LPの1本化」「グローバルサイトの多言語・エリア別CMS」を切り分けると工数が見えやすい。</p>
+
+    <h2>2. ドメイン・役割一覧</h2>
+    <table>
+      <tr>
+        <th>URL</th>
+        <th>役割</th>
+      </tr>
+      <tr>
+        <td><a href="https://citygroup-s.com/" target="_blank" rel="noopener">citygroup-s.com</a></td>
+        <td>グループ公式（店舗紹介・ブランド導線など）</td>
+      </tr>
+      <tr>
+        <td><a href="https://citygroup-s.com/recruit/" target="_blank" rel="noopener">citygroup-s.com/recruit/</a></td>
+        <td><strong>国内向けキャスト採用</strong>の長尺ランディング（メリット・福利厚生・教育・エリア別募集要項＝店舗ブロック）</td>
+      </tr>
+      <tr>
+        <td><a href="https://citygroup-s.com/entry/" target="_blank" rel="noopener">citygroup-s.com/entry/</a></td>
+        <td><strong>採用エントリー</strong>（キャスト／スタッフ選択、店舗希望など）</td>
+      </tr>
+      <tr>
+        <td><a href="https://citygroup-s.com/line/" target="_blank" rel="noopener">citygroup-s.com/line/</a></td>
+        <td>LINE応募導線（国内）</td>
+      </tr>
+      <tr>
+        <td><a href="https://recruit.citygroup-global.com/" target="_blank" rel="noopener">recruit.citygroup-global.com</a></td>
+        <td><strong>海外・沖縄（リゾキャバ／外キャバ）</strong>向け採用サイト。エリア別下層、初めての方向け、インタビュー、FAQ、お知らせ等</td>
+      </tr>
+    </table>
+
+    <h2>3. citygroup-s.com/recruit/（国内キャスト採用LP）の構成</h2>
+    <h3>主なブロック・機能</h3>
+    <p class="meta" style="margin:-0.25rem 0 0.75rem;">各行は<strong>税別・概算</strong>。1ページにセクションが縦に積まれるLP想定。共通ヘッダー／フッター、CMS横断は別途。</p>
+    <table>
+      <thead>
+        <tr>
+          <th class="col-page">ブロック</th>
+          <th>概要</th>
+          <th class="col-design">デザイン<br><span style="font-weight:400;font-size:0.85em;">（税別目安）</span></th>
+          <th class="col-system">システム実装<br><span style="font-weight:400;font-size:0.85em;">（税別目安）</span></th>
+          <th class="col-link">リンク</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">ファーストビュー</th>
+          <td>キャッチコピー、世界観の訴求</td>
+          <td class="col-design">20〜40万円</td>
+          <td class="col-system">15〜30万円</td>
+          <td><a href="https://citygroup-s.com/recruit/" target="_blank" rel="noopener">https://citygroup-s.com/recruit/</a></td>
+        </tr>
+        <tr>
+          <th scope="row">働くメリット</th>
+          <td>複数カード（全国海外展開、未経験サポート、高収入、キャリア等）</td>
+          <td class="col-design">15〜28万円</td>
+          <td class="col-system">12〜22万円</td>
+          <td>（同上ページ内）</td>
+        </tr>
+        <tr>
+          <th scope="row">福利厚生</th>
+          <td>寮、海外・語学サポート等</td>
+          <td class="col-design">10〜18万円</td>
+          <td class="col-system">8〜14万円</td>
+          <td>（同上）</td>
+        </tr>
+        <tr>
+          <th scope="row">教育制度</th>
+          <td>マンツーマン、経験者向け、海外・語学研修など</td>
+          <td class="col-design">10〜18万円</td>
+          <td class="col-system">8〜14万円</td>
+          <td>（同上）</td>
+        </tr>
+        <tr>
+          <th scope="row">募集要項（店舗）</th>
+          <td>エリアタブ（例：札幌・函館・千葉・東京）切替、<strong>店舗ごとに表組・LINE／エントリー導線</strong>。店舗追加時の更新工数に注意</td>
+          <td class="col-design">25〜50万円＋店舗分</td>
+          <td class="col-system">20〜45万円＋店舗分</td>
+          <td>（同上）</td>
+        </tr>
+        <tr>
+          <th scope="row">フッター付近CTA</th>
+          <td>LINE応募・採用エントリーへの再導線</td>
+          <td class="col-design">3〜8万円</td>
+          <td class="col-system">2〜6万円</td>
+          <td><a href="https://citygroup-s.com/line/" target="_blank" rel="noopener">LINE</a>／<a href="https://citygroup-s.com/entry/" target="_blank" rel="noopener">エントリー</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>採用エントリー（/entry/）</h3>
+    <table>
+      <thead>
+        <tr>
+          <th class="col-page">項目</th>
+          <th>内容</th>
+          <th class="col-design">デザイン<br><span style="font-weight:400;font-size:0.85em;">（税別目安）</span></th>
+          <th class="col-system">システム実装<br><span style="font-weight:400;font-size:0.85em;">（税別目安）</span></th>
+          <th class="col-link">リンク</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">フォーム項目</th>
+          <td>希望職種（キャスト／スタッフ）、氏名、お住まい、年齢、職業、希望店舗、経験有無、メール（確認入力）、質問など</td>
+          <td class="col-design">10〜20万円</td>
+          <td class="col-system">28〜55万円</td>
+          <td><a href="https://citygroup-s.com/entry/" target="_blank" rel="noopener">https://citygroup-s.com/entry/</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>4. recruit.citygroup-global.com（海外・沖縄）の構成</h2>
+    <h3>主なページ・機能</h3>
+    <p class="meta" style="margin:-0.25rem 0 0.75rem;">各行は<strong>税別・概算</strong>。エリアページは<strong>テンプレ1エリアあたり</strong>の目安。多言語化の有無で実装が大きく変動。</p>
+    <table>
+      <thead>
+        <tr>
+          <th class="col-page">ページ</th>
+          <th>概要</th>
+          <th class="col-design">デザイン<br><span style="font-weight:400;font-size:0.85em;">（税別目安）</span></th>
+          <th class="col-system">システム実装<br><span style="font-weight:400;font-size:0.85em;">（税別目安）</span></th>
+          <th class="col-link">リンク</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">トップ</th>
+          <td>世界観・エリア選択への導線</td>
+          <td class="col-design">28〜48万円</td>
+          <td class="col-system">22〜40万円</td>
+          <td><a href="https://recruit.citygroup-global.com/" target="_blank" rel="noopener">https://recruit.citygroup-global.com/</a></td>
+        </tr>
+        <tr>
+          <th scope="row">リゾキャバのお仕事</th>
+          <td>業務イメージ</td>
+          <td class="col-design">10〜18万円</td>
+          <td class="col-system">8〜15万円</td>
+          <td><a href="https://recruit.citygroup-global.com/work/" target="_blank" rel="noopener">…/work/</a></td>
+        </tr>
+        <tr>
+          <th scope="row">エリア別</th>
+          <td>シンガポール／香港／タイ／ベトナム／沖縄など下層ページ</td>
+          <td class="col-design">12〜22万円／エリア</td>
+          <td class="col-system">14〜28万円／エリア</td>
+          <td>
+            <a href="https://recruit.citygroup-global.com/singapore/" target="_blank" rel="noopener">Singapore</a>
+            <a href="https://recruit.citygroup-global.com/hongkong/" target="_blank" rel="noopener">HK</a>
+            <a href="https://recruit.citygroup-global.com/thailand/" target="_blank" rel="noopener">Thailand</a>
+            <a href="https://recruit.citygroup-global.com/vietnam/" target="_blank" rel="noopener">Vietnam</a>
+            <a href="https://recruit.citygroup-global.com/okinawa/" target="_blank" rel="noopener">Okinawa</a>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">初めてのリゾキャバ</th>
+          <td>未経験・不安解消系</td>
+          <td class="col-design">10〜18万円</td>
+          <td class="col-system">8〜14万円</td>
+          <td><a href="https://recruit.citygroup-global.com/beginner/" target="_blank" rel="noopener">…/beginner/</a></td>
+        </tr>
+        <tr>
+          <th scope="row">先輩インタビュー</th>
+          <td>一覧＋詳細想定</td>
+          <td class="col-design">8〜15万円</td>
+          <td class="col-system">18〜40万円</td>
+          <td><a href="https://recruit.citygroup-global.com/interview/" target="_blank" rel="noopener">…/interview/</a></td>
+        </tr>
+        <tr>
+          <th scope="row">給与・待遇／募集要項</th>
+          <td>条件説明・詳細ページ</td>
+          <td class="col-design">12〜22万円</td>
+          <td class="col-system">10〜18万円</td>
+          <td>
+            <a href="https://recruit.citygroup-global.com/treatment/" target="_blank" rel="noopener">treatment</a>／
+            <a href="https://recruit.citygroup-global.com/job-description/" target="_blank" rel="noopener">job-description</a>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">リゾキャバ／外キャバ／生活／FAQ</th>
+          <td>用語説明・ライフスタイル・よくある質問</td>
+          <td class="col-design">18〜35万円</td>
+          <td class="col-system">15〜30万円</td>
+          <td>
+            <a href="https://recruit.citygroup-global.com/resort-cabaret/" target="_blank" rel="noopener">resort-cabaret</a>
+            <a href="https://recruit.citygroup-global.com/abroad-cabaret/" target="_blank" rel="noopener">abroad-cabaret</a>
+            <a href="https://recruit.citygroup-global.com/resort-life/" target="_blank" rel="noopener">resort-life</a>
+            <a href="https://recruit.citygroup-global.com/faq/" target="_blank" rel="noopener">faq</a>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">シティーグループについて</th>
+          <td>企業紹介</td>
+          <td class="col-design">10〜18万円</td>
+          <td class="col-system">8〜14万円</td>
+          <td><a href="https://recruit.citygroup-global.com/about/" target="_blank" rel="noopener">…/about/</a></td>
+        </tr>
+        <tr>
+          <th scope="row">お知らせ</th>
+          <td>ニュース一覧・詳細</td>
+          <td class="col-design">6〜12万円</td>
+          <td class="col-system">15〜35万円</td>
+          <td><a href="https://recruit.citygroup-global.com/news/" target="_blank" rel="noopener">…/news/</a></td>
+        </tr>
+        <tr>
+          <th scope="row">サイトマップ</th>
+          <td>全ページ導線</td>
+          <td class="col-design">2〜5万円</td>
+          <td class="col-system">3〜8万円</td>
+          <td><a href="https://recruit.citygroup-global.com/sitemap/" target="_blank" rel="noopener">…/sitemap/</a></td>
+        </tr>
+        <tr>
+          <th scope="row">LINE応募</th>
+          <td>グローバルサイト側のLINE導線</td>
+          <td class="col-design">2〜5万円</td>
+          <td class="col-system">2〜6万円</td>
+          <td><a href="https://recruit.citygroup-global.com/line/" target="_blank" rel="noopener">…/line/</a></td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="note">国内サイトとグローバルサイトで<strong>LINEのURL・計測タグが別</strong>になる場合、運用ルールを揃えるか分けるかで工数・契約が変わる。</p>
+
+    <h2>5. 技術・コンプライアンス（見積もりで確認すべき項目）</h2>
+    <table>
+      <thead>
+        <tr>
+          <th class="col-no">#</th>
+          <th>項目</th>
+          <th>確認内容</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="col-no">1</td>
+          <th scope="row">フォーム</th>
+          <td>送信先、スパム対策、店舗マスタとの連動（プルダウン更新）</td>
+        </tr>
+        <tr>
+          <td class="col-no">2</td>
+          <th scope="row">個人情報</th>
+          <td>プライバシーポリシー・利用規約の掲載箇所（国内／グローバルで分けるか）</td>
+        </tr>
+        <tr>
+          <td class="col-no">3</td>
+          <th scope="row">2ドメイン運用</th>
+          <td>citygroup-s.com と recruit.citygroup-global.com のデザイン統一、GA／タグの跨ぎ</td>
+        </tr>
+        <tr>
+          <td class="col-no">4</td>
+          <th scope="row">多言語</th>
+          <td>グローバルサイトの言語切替の有無、翻訳ワークフロー</td>
+        </tr>
+        <tr>
+          <td class="col-no">5</td>
+          <th scope="row">店舗・エリアマスタ</th>
+          <td>新規オープン・閉店時の更新手順（国内LPの表組ブロック）</td>
+        </tr>
+        <tr>
+          <td class="col-no">6</td>
+          <th scope="row">LINE</th>
+          <td>国内用・海外用の公式アカウントの違い、計測</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>6. 見積もり用スコープ分解（参考）</h2>
+    <p class="meta" style="margin:0 0 0.75rem;">ブロック単位の<strong>税別・概算</strong>。セクション3・4の行別目安と<strong>単純合算は一致しない</strong>（重複除去・セット割・CMS一括を想定）。</p>
+    <table>
+      <thead>
+        <tr>
+          <th class="col-no">#</th>
+          <th>スコープ</th>
+          <th class="col-design">デザイン<br><span style="font-weight:400;font-size:0.85em;">（税別目安）</span></th>
+          <th class="col-system">システム実装<br><span style="font-weight:400;font-size:0.85em;">（税別目安）</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="col-no">1</td>
+          <td>国内：採用LP（長尺）＋店舗ブロック＋エントリーフォーム</td>
+          <td class="col-design">90〜160万円＋店舗分</td>
+          <td class="col-system">75〜140万円＋店舗分</td>
+        </tr>
+        <tr>
+          <td class="col-no">2</td>
+          <td>グローバル：トップ＋エリア別＋業務説明＋初めて／インタビュー／待遇／FAQ 等</td>
+          <td class="col-design">120〜220万円＋エリア分</td>
+          <td class="col-system">100〜200万円＋エリア分</td>
+        </tr>
+        <tr>
+          <td class="col-no">3</td>
+          <td>お知らせ（CMS）・サイトマップ</td>
+          <td class="col-design">10〜20万円</td>
+          <td class="col-system">20〜45万円</td>
+        </tr>
+        <tr>
+          <td class="col-no">4</td>
+          <td>LINE導線（国内・海外それぞれ）</td>
+          <td class="col-design">5〜12万円</td>
+          <td class="col-system">5〜14万円</td>
+        </tr>
+        <tr>
+          <td class="col-no">5</td>
+          <td>運用：CMS・SSL・アクセス解析・軽微な横断デザイン（初期セットアップ想定）</td>
+          <td class="col-design">15〜35万円</td>
+          <td class="col-system">35〜85万円</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>7. 制作費用の目安（デザイン〜システム実装〜公開）</h2>
+    <p>シティーグループ級（<strong>国内採用LP＋グローバル採用サイト</strong>）をデザインから実装・公開まで外注する場合の、日本市場でよくある<strong>税別・概算レンジ</strong>です。</p>
+    <table>
+      <thead>
+        <tr>
+          <th>想定スコープ</th>
+          <th>税別の目安（ざっくり）</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">最小寄り</th>
+          <td>国内LP＋フォーム中心、グローバルはページ数を絞る、CMSはWordPress等　→　<strong>約200万〜450万円</strong></td>
+        </tr>
+        <tr>
+          <th scope="row">中間</th>
+          <td>国内の店舗ブロック充実、グローバルでエリアページ・インタビュー・ニュースCMS、LINE二系統　→　<strong>約450万〜1,000万円</strong></td>
+        </tr>
+        <tr>
+          <th scope="row">寄り多め</th>
+          <td>多言語、デザイン・動きの作り込み、高度なフォーム連携、撮影・動画、多言語SEO　→　<strong>約1,000万〜2,000万円以上</strong></td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="note">サーバー・ドメイン・メール従量、翻訳費、撮影・ライティング別途などは別枠になりやすい。金額を左右しやすい要因は、<strong>グローバル側のページ数・言語数</strong>、<strong>国内の店舗数と更新頻度</strong>、<strong>2ドメインの計測・運用を誰が持つか</strong>です。</p>
+
+    <h2>8. 制作会社への管理・運用費用の月額目安</h2>
+    <p>公開後に制作会社へ支払う、管理・保守・軽微な更新の<strong>月額契約</strong>の目安です（KAISER資料の区分と同様）。</p>
+    <table>
+      <thead>
+        <tr>
+          <th>想定内容</th>
+          <th>税別の月額目安（ざっくり）</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">ライト</th>
+          <td>問い合わせ窓口、月数回のテキスト差し替え、CMS質問対応　→　<strong>約1万〜3万円／月</strong></td>
+        </tr>
+        <tr>
+          <th scope="row">スタンダード</th>
+          <td>上記に加え、定期更新支援、CMS／プラグイン更新、軽微な調整　→　<strong>約3万〜12万円／月</strong></td>
+        </tr>
+        <tr>
+          <th scope="row">しっかり</th>
+          <td><strong>国内＋グローバル2サイト</strong>、更新頻度が高い、優先対応・工数枠明記　→　<strong>約12万〜35万円／月</strong></td>
+        </tr>
+        <tr>
+          <th scope="row">大規模・SLA重視</th>
+          <td>障害対応、小改修継続、インフラも含むなど　→　<strong>約35万〜100万円／月超</strong>の例もある</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="note" style="margin-top:2rem;">
+      <a href="../index.html">一覧へ</a>
+      ／
+      <a href="../カイザーグループ/kaiser_index.html">KAISERの参考資料へ</a>
+    </p>
+    <p class="note" style="margin-top:1rem;">本資料は公開Webページの構成から整理したものであり、内部のCMS・サーバー・契約サービスは推定を含みます。セクション3・4・6の金額は<strong>税別・概算</strong>であり、正式な見積もりではありません。正式見積もり前に「国内LPとグローバルサイトを同時制作か／段階リリースか」「多言語の要否」を確認すると幅を絞りやすい。</p>
+  </article>
+</body>
+</html>

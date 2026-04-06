@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>参考サイト分析資料｜KAISER（カイザーグループ）求人サイト</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --text: #1a1a1a;
+      --muted: #5c5c5c;
+      --border: #e0e0e0;
+      --accent: #1e3a5f;
+      --bg: #fafafa;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Noto Sans CJK JP", Meiryo, sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+      color: var(--text);
+      background: var(--bg);
+    }
+    .sheet {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 3rem;
+      background: #fff;
+      min-height: 100vh;
+      box-shadow: 0 0 0 1px var(--border);
+    }
+    @media print {
+      body { background: #fff; }
+      .sheet { box-shadow: none; padding: 1rem; }
+      a { color: inherit; text-decoration: none; }
+      .nav-doc { display: none; }
+    }
+    .nav-doc {
+      font-size: 0.88rem;
+      margin: 0 0 1.25rem;
+      padding: 0.65rem 0.9rem;
+      background: #f0f4f6;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+    }
+    .nav-doc a { color: #0b57d0; text-decoration: none; }
+    .nav-doc a:hover { text-decoration: underline; }
+    .nav-doc .nav-sep { color: var(--muted); margin: 0 0.4rem; }
+    .nav-current { font-weight: 600; color: var(--accent); }
+    h1 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin: 0 0 0.25rem;
+      color: var(--accent);
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 0.5rem;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 2rem;
+    }
+    h2 {
+      font-size: 1.05rem;
+      margin: 2rem 0 0.75rem;
+      padding-left: 0.5rem;
+      border-left: 4px solid var(--accent);
+    }
+    h3 {
+      font-size: 0.95rem;
+      margin: 1.25rem 0 0.5rem;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    p { margin: 0.5rem 0; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+      margin: 0.75rem 0;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 0.5rem 0.65rem;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: #f3f5f7; font-weight: 600; width: 28%; }
+    thead th { width: auto; }
+    .col-page { width: 11%; min-width: 5.5rem; }
+    .col-link { width: 26%; word-break: break-all; }
+    .col-design, .col-system {
+      width: 10%;
+      min-width: 6.5rem;
+      font-size: 0.88rem;
+      line-height: 1.55;
+      white-space: nowrap;
+    }
+    @media (max-width: 900px) {
+      .col-design, .col-system { white-space: normal; }
+    }
+    .col-no { width: 2.5rem; text-align: center; }
+    .note {
+      font-size: 0.88rem;
+      color: var(--muted);
+      background: #f7f8fa;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-top: 0.75rem;
+    }
+    a { color: #0b57d0; }
+    td a { word-break: break-all; }
+  </style>
+</head>
+<body>
+  <article class="sheet">
+    <nav class="nav-doc" aria-label="参考資料の移動">
+      <a href="../index.html">一覧</a>
+      <span class="nav-sep" aria-hidden="true">·</span>
+      <span class="nav-current" aria-current="page">KAISER</span>
+      <span class="nav-sep" aria-hidden="true">·</span>
+      <a href="../シティーグループ/city_index.html">シティーグループ</a>
+    </nav>
+    <h1>参考サイト分析資料<br><span style="font-size:0.85em;font-weight:500;">KAISER（カイザーグループ）求人サイト</span></h1>
+    <p class="meta">用途：キャバクラ求人サイト制作の見積もり・要件整理　／　公開Web情報に基づく整理（2026年4月時点）</p>
+
+    <h2>1. 概要</h2>
+    <table>
+      <tr>
+        <th>運営</th>
+        <td>株式会社 KAISER ENTERPRISE（カイザーエンタープライズ）</td>
+      </tr>
+      <tr>
+        <th>業態・規模感</th>
+        <td>高級キャバクラチェーン。六本木・北新地・宮古島など全国複数エリア・多数店舗で展開（公開情報では19店舗規模などの記述あり）。</td>
+      </tr>
+      <tr>
+        <th>訴求トーン</th>
+        <td>「健全な企業」「エリアNo.1のサービス」「ホスピタリティ」など、ブランディングを重視したコーポレート調の採用サイト。</td>
+      </tr>
+    </table>
+    <p class="note">単一のランディングページではなく、<strong>スタッフ採用</strong>と<strong>キャスト採用</strong>でサイト（または大セクション）が分かれている点が特徴。見積もりではこの分離を前提にするかで工数が変わる。</p>
+
+    <h2>2. ドメイン・役割一覧</h2>
+    <table>
+      <tr>
+        <th>URL</th>
+        <th>役割</th>
+      </tr>
+      <tr>
+        <td><a href="https://kaiser-recruit.com/" target="_blank" rel="noopener">kaiser-recruit.com</a></td>
+        <td>中途・店舗スタッフ等の<strong>公式採用サイト</strong>（メイン採用ブランド）</td>
+      </tr>
+      <tr>
+        <td><a href="https://kaiser-castrecruit.com/" target="_blank" rel="noopener">kaiser-castrecruit.com</a></td>
+        <td><strong>キャスト向け専用</strong>。店舗検索、未経験・地方・経験者向けコンテンツ</td>
+      </tr>
+      <tr>
+        <td><a href="https://kaiser-recruit.info/" target="_blank" rel="noopener">kaiser-recruit.info</a></td>
+        <td>運営会社など補助的な情報（コンテンツは限定的）</td>
+      </tr>
+    </table>
+
+    <h2>3. kaiser-recruit.com（スタッフ採用）の構成</h2>
+    <h3>主なページ・機能</h3>
+    <p class="meta" style="margin:-0.25rem 0 0.75rem;">各行は<strong>税別・概算</strong>。共通ヘッダー／フッター、CMS基盤の横断コストは別途。デザイン＝UI／ビジュアル／ワイヤー、システム＝実装・CMS組込・動作。</p>
+    <table>
+      <thead>
+        <tr>
+          <th class="col-page">ページ</th>
+          <th>概要</th>
+          <th class="col-design">デザイン<br><span style="font-weight:400;font-size:0.85em;">（税別目安）</span></th>
+          <th class="col-system">システム実装<br><span style="font-weight:400;font-size:0.85em;">（税別目安）</span></th>
+          <th class="col-link">リンク</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">トップ</th>
+          <td>メインビジュアル、SCROLL案内、各セクションへの導線</td>
+          <td class="col-design">30〜50万円</td>
+          <td class="col-system">25〜45万円</td>
+          <td><a href="https://kaiser-recruit.com/" target="_blank" rel="noopener">https://kaiser-recruit.com/</a></td>
+        </tr>
+        <tr>
+          <th scope="row">会社を知る</th>
+          <td>企業情報</td>
+          <td class="col-design">10〜18万円</td>
+          <td class="col-system">8〜14万円</td>
+          <td><a href="https://kaiser-recruit.com/about" target="_blank" rel="noopener">https://kaiser-recruit.com/about</a></td>
+        </tr>
+        <tr>
+          <th scope="row">働く魅力・環境</th>
+          <td>キャリアパス・研修・福利厚生など</td>
+          <td class="col-design">12〜20万円</td>
+          <td class="col-system">10〜16万円</td>
+          <td><a href="https://kaiser-recruit.com/culture" target="_blank" rel="noopener">https://kaiser-recruit.com/culture</a></td>
+        </tr>
+        <tr>
+          <th scope="row">仕事を知る</th>
+          <td>仕事内容・募集要項</td>
+          <td class="col-design">10〜18万円</td>
+          <td class="col-system">10〜16万円</td>
+          <td><a href="https://kaiser-recruit.com/club-staff" target="_blank" rel="noopener">https://kaiser-recruit.com/club-staff</a></td>
+        </tr>
+        <tr>
+          <th scope="row">インタビュー（一覧）</th>
+          <td>複数の個別インタビュー記事（メディア／インタビュー導線）。一覧＋詳細テンプレ想定</td>
+          <td class="col-design">8〜15万円</td>
+          <td class="col-system">18〜40万円</td>
+          <td><a href="https://kaiser-recruit.com/interview" target="_blank" rel="noopener">https://kaiser-recruit.com/interview</a>　<a href="https://kaiser-recruit.com/media" target="_blank" rel="noopener">https://kaiser-recruit.com/media</a></td>
+        </tr>
+        <tr>
+          <th scope="row">新着情報</th>
+          <td>日付付きお知らせの一覧・詳細</td>
+          <td class="col-design">6〜12万円</td>
+          <td class="col-system">15〜35万円</td>
+          <td><a href="https://kaiser-recruit.com/news" target="_blank" rel="noopener">https://kaiser-recruit.com/news</a></td>
+        </tr>
+        <tr>
+          <th scope="row">FAQ</th>
+          <td>よくある質問</td>
+          <td class="col-design">6〜12万円</td>
+          <td class="col-system">6〜12万円</td>
+          <td><a href="https://kaiser-recruit.com/faq" target="_blank" rel="noopener">https://kaiser-recruit.com/faq</a></td>
+        </tr>
+        <tr>
+          <th scope="row">店舗情報</th>
+          <td>店舗エリア等（about 内アンカー等）。会社ページに含む場合は重複計上に注意</td>
+          <td class="col-design">2〜5万円</td>
+          <td class="col-system">1〜3万円</td>
+          <td><a href="https://kaiser-recruit.com/about#id4" target="_blank" rel="noopener">https://kaiser-recruit.com/about#id4</a></td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>採用エントリー（/entry）</h3>
+    <table>
+      <thead>
+        <tr>
+          <th class="col-page">項目</th>
+          <th>内容</th>
+          <th class="col-design">デザイン<br><span style="font-weight:400;font-size:0.85em;">（税別目安）</span></th>
+          <th class="col-system">システム実装<br><span style="font-weight:400;font-size:0.85em;">（税別目安）</span></th>
+          <th class="col-link">リンク</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">フォーム項目</th>
+          <td>氏名・ふりがな・年齢・希望職種（店舗スタッフ／ソムリエ／ドライバー／キッチン／キャスト等）・希望勤務地（エリア選択）・メール・電話・問い合わせ内容</td>
+          <td class="col-design">10〜20万円</td>
+          <td class="col-system">30〜60万円</td>
+          <td><a href="https://kaiser-recruit.com/entry" target="_blank" rel="noopener">https://kaiser-recruit.com/entry</a></td>
+        </tr>
+        <tr>
+          <th scope="row">同意・ポリシー</th>
+          <td>個人情報の取扱いへの同意、長文のプライバシーポリシー</td>
+          <td class="col-design">5〜10万円</td>
+          <td class="col-system">3〜8万円</td>
+          <td>（上記ページ内）</td>
+        </tr>
+        <tr>
+          <th scope="row">reCAPTCHA</th>
+          <td>Google reCAPTCHA による保護の表記あり</td>
+          <td class="col-design">—</td>
+          <td class="col-system">5〜12万円</td>
+          <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google プライバシー</a>／<a href="https://policies.google.com/terms" target="_blank" rel="noopener">利用規約</a></td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>その他</h3>
+    <table>
+      <thead>
+        <tr>
+          <th class="col-page">機能</th>
+          <th>内容</th>
+          <th class="col-design">デザイン<br><span style="font-weight:400;font-size:0.85em;">（税別目安）</span></th>
+          <th class="col-system">システム実装<br><span style="font-weight:400;font-size:0.85em;">（税別目安）</span></th>
+          <th class="col-link">リンク</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">AI採用担当</th>
+          <td>チャットによる採用関連の質問対応。埋め込み型とフルカスタムで幅大</td>
+          <td class="col-design">3〜8万円</td>
+          <td class="col-system">40〜150万円</td>
+          <td>（サイト内ウィジェット／トップ・エントリー等）</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>4. kaiser-castrecruit.com（キャスト採用）の構成</h2>
+    <h3>主なページ・機能</h3>
+    <p class="meta" style="margin:-0.25rem 0 0.75rem;">各行は<strong>税別・概算</strong>。§3と同様、共通パーツ・CMS横断は別途。店舗詳細は<strong>テンプレ1店舗あたり</strong>の目安（店舗数で按分）。</p>
+    <table>
+      <thead>
+        <tr>
+          <th class="col-page">ページ</th>
+          <th>概要</th>
+          <th class="col-design">デザイン<br><span style="font-weight:400;font-size:0.85em;">（税別目安）</span></th>
+          <th class="col-system">システム実装<br><span style="font-weight:400;font-size:0.85em;">（税別目安）</span></th>
+          <th class="col-link">リンク</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">トップ</th>
+          <td>メインビジュアル、「店舗を探す」導線</td>
+          <td class="col-design">25〜45万円</td>
+          <td class="col-system">18〜35万円</td>
+          <td><a href="https://kaiser-castrecruit.com/" target="_blank" rel="noopener">https://kaiser-castrecruit.com/</a></td>
+        </tr>
+        <tr>
+          <th scope="row">About</th>
+          <td>グループの強み・理念</td>
+          <td class="col-design">10〜18万円</td>
+          <td class="col-system">8〜14万円</td>
+          <td><a href="https://kaiser-castrecruit.com/about" target="_blank" rel="noopener">https://kaiser-castrecruit.com/about</a></td>
+        </tr>
+        <tr>
+          <th scope="row">店舗一覧</th>
+          <td>エリア別（六本木・北新地・ミナミ・梅田・京橋・祇園・宮古島等）</td>
+          <td class="col-design">12〜22万円</td>
+          <td class="col-system">14〜28万円</td>
+          <td><a href="https://kaiser-castrecruit.com/store-list" target="_blank" rel="noopener">https://kaiser-castrecruit.com/store-list</a></td>
+        </tr>
+        <tr>
+          <th scope="row">店舗詳細</th>
+          <td>店舗ごとに個別URL。テンプレ＋CMS想定時は<strong>店舗数×単価</strong>で算出</td>
+          <td class="col-design">4〜8万円／店</td>
+          <td class="col-system">3〜7万円／店</td>
+          <td><a href="https://kaiser-castrecruit.com/baron/" target="_blank" rel="noopener">…/baron/</a> 他多数</td>
+        </tr>
+        <tr>
+          <th scope="row">未経験向け</th>
+          <td>未経験者向け訴求</td>
+          <td class="col-design">10〜18万円</td>
+          <td class="col-system">8〜14万円</td>
+          <td><a href="https://kaiser-castrecruit.com/beginner" target="_blank" rel="noopener">https://kaiser-castrecruit.com/beginner</a></td>
+        </tr>
+        <tr>
+          <th scope="row">地方在住向け</th>
+          <td>上京・転居イメージの訴求</td>
+          <td class="col-design">10〜18万円</td>
+          <td class="col-system">8〜14万円</td>
+          <td><a href="https://kaiser-castrecruit.com/local" target="_blank" rel="noopener">https://kaiser-castrecruit.com/local</a></td>
+        </tr>
+        <tr>
+          <th scope="row">経験者向け</th>
+          <td>移籍・スキル活用の訴求</td>
+          <td class="col-design">10〜18万円</td>
+          <td class="col-system">8〜14万円</td>
+          <td><a href="https://kaiser-castrecruit.com/experienced" target="_blank" rel="noopener">https://kaiser-castrecruit.com/experienced</a></td>
+        </tr>
+        <tr>
+          <th scope="row">募集要項</th>
+          <td>募集内容の詳細</td>
+          <td class="col-design">8〜15万円</td>
+          <td class="col-system">7〜12万円</td>
+          <td><a href="https://kaiser-castrecruit.com/description" target="_blank" rel="noopener">https://kaiser-castrecruit.com/description</a></td>
+        </tr>
+        <tr>
+          <th scope="row">お問い合わせ</th>
+          <td>問い合わせフォーム</td>
+          <td class="col-design">8〜15万円</td>
+          <td class="col-system">18〜40万円</td>
+          <td><a href="https://kaiser-castrecruit.com/contact" target="_blank" rel="noopener">https://kaiser-castrecruit.com/contact</a></td>
+        </tr>
+        <tr>
+          <th scope="row">LINE</th>
+          <td>公式LINEへの導線（バナー・計測は要件次第）</td>
+          <td class="col-design">2〜5万円</td>
+          <td class="col-system">2〜5万円</td>
+          <td><a href="https://lin.ee/GfkLg4mK" target="_blank" rel="noopener">https://lin.ee/GfkLg4mK</a></td>
+        </tr>
+        <tr>
+          <th scope="row">キャストインタビュー</th>
+          <td>公開時点では「coming soon」表記あり。本格運用時は一覧＋詳細想定</td>
+          <td class="col-design">8〜15万円</td>
+          <td class="col-system">12〜28万円</td>
+          <td>（準備中）</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="note">店舗数 × 詳細ページはテンプレート化しても、<strong>初期入稿・CMS設計・運用フロー</strong>が見積もりに影響する。</p>
+
+    <h2>5. 技術・コンプライアンス（見積もりで確認すべき項目）</h2>
+    <table>
+      <thead>
+        <tr>
+          <th class="col-no">#</th>
+          <th>項目</th>
+          <th>確認内容</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="col-no">1</td>
+          <th scope="row">フォーム</th>
+          <td>reCAPTCHA、送信先（メール／スプレッドシート／採用ATS 等）</td>
+        </tr>
+        <tr>
+          <td class="col-no">2</td>
+          <th scope="row">個人情報</th>
+          <td>プライバシーポリシー（採用サイトは記載が厚めになりがち）</td>
+        </tr>
+        <tr>
+          <td class="col-no">3</td>
+          <th scope="row">ニュース・インタビュー</th>
+          <td>静的HTMLか CMS か</td>
+        </tr>
+        <tr>
+          <td class="col-no">4</td>
+          <th scope="row">AIチャット</th>
+          <td>有無・仕様</td>
+        </tr>
+        <tr>
+          <td class="col-no">5</td>
+          <th scope="row">店舗マスタ</th>
+          <td>追加・閉店時の更新手順</td>
+        </tr>
+        <tr>
+          <td class="col-no">6</td>
+          <th scope="row">LINE</th>
+          <td>URLリンクのみか、計測・タグまで含めるか</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>6. 見積もり用スコープ分解（参考）</h2>
+    <p class="meta" style="margin:0 0 0.75rem;">ブロック単位の<strong>税別・概算</strong>。§3・§4の行別目安と<strong>単純合算は一致しない</strong>（重複除去・セット割・CMS一括を想定）。</p>
+    <table>
+      <thead>
+        <tr>
+          <th class="col-no">#</th>
+          <th>スコープ</th>
+          <th class="col-design">デザイン<br><span style="font-weight:400;font-size:0.85em;">（税別目安）</span></th>
+          <th class="col-system">システム実装<br><span style="font-weight:400;font-size:0.85em;">（税別目安）</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="col-no">1</td>
+          <td>コーポレート採用トップ＋下層（会社・文化・仕事・FAQ）</td>
+          <td class="col-design">80〜140万円</td>
+          <td class="col-system">65〜115万円</td>
+        </tr>
+        <tr>
+          <td class="col-no">2</td>
+          <td>お知らせ（一覧・詳細）＋インタビュー（一覧・詳細）</td>
+          <td class="col-design">20〜35万円</td>
+          <td class="col-system">45〜90万円</td>
+        </tr>
+        <tr>
+          <td class="col-no">3</td>
+          <td>エントリーフォーム＋reCAPTCHA＋通知先連携</td>
+          <td class="col-design">15〜30万円</td>
+          <td class="col-system">45〜85万円</td>
+        </tr>
+        <tr>
+          <td class="col-no">4</td>
+          <td>（任意）AI採用チャット</td>
+          <td class="col-design">3〜8万円</td>
+          <td class="col-system">40〜150万円</td>
+        </tr>
+        <tr>
+          <td class="col-no">5</td>
+          <td>キャスト向け：エリア別店舗一覧＋店舗詳細テンプレ＋ターゲット別ページ（店舗数は別途）</td>
+          <td class="col-design">70〜130万円＋店舗分</td>
+          <td class="col-system">65〜120万円＋店舗分</td>
+        </tr>
+        <tr>
+          <td class="col-no">6</td>
+          <td>お問い合わせ＋LINE導線</td>
+          <td class="col-design">12〜22万円</td>
+          <td class="col-system">22〜48万円</td>
+        </tr>
+        <tr>
+          <td class="col-no">7</td>
+          <td>運用：CMS・入稿・SSL・アクセス解析 等（初期セットアップ想定）</td>
+          <td class="col-design">15〜35万円</td>
+          <td class="col-system">35〜80万円</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>7. 制作費用の目安（デザイン〜システム実装〜公開）</h2>
+    <p>KAISER級の採用サイトを<strong>デザインからシステム実装・公開まで</strong>外注する場合の、日本市場でよくある<strong>税別・概算レンジ</strong>です。案件内容・業者規模・交渉により前後します。</p>
+    <table>
+      <thead>
+        <tr>
+          <th>想定スコープ</th>
+          <th>税別の目安（ざっくり）</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">最小寄り</th>
+          <td>1サイトに集約、AIチャットなし、CMSはWordPress等の定番、フォームはメール送信中心　→　<strong>約150万〜350万円</strong></td>
+        </tr>
+        <tr>
+          <th scope="row">中間</th>
+          <td>スタッフ用＋キャスト用の<strong>2系統</strong>、店舗テンプレ多数、ニュース／インタビューCMS、フォーム、reCAPTCHA、LINE導線　→　<strong>約350万〜800万円</strong></td>
+        </tr>
+        <tr>
+          <th scope="row">寄り多め</th>
+          <td>上記に加え<strong>AI採用チャット本格</strong>、デザイン・動きの作り込み、採用ATS連携、多言語、高いアクセシビリティ要件など　→　<strong>約800万〜1,500万円以上</strong></td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="note">上記に含まれないことが多いもの：<strong>サーバー・ドメイン・メール・reCAPTCHA等の従量、撮影・ライティング別途、AIの月額利用料</strong>など。金額を左右しやすい要因は §5 に記載の確認項目に加え、<strong>2サイトか1サイトか</strong>、<strong>店舗数・入稿担当</strong>、<strong>フォーム連携の複雑さ</strong>、<strong>AIの有無と実装方式</strong>です。</p>
+
+    <h2>8. 制作会社への管理・運用費用の月額目安</h2>
+    <p>公開後に<strong>制作会社へ支払う</strong>、サイトの管理・保守・軽微な更新対応などの<strong>月額契約（ランニング）</strong>の目安です。サーバー代・ドメイン更新料を制作会社が代理徴収する場合は、その分が上乗せされることがあります（契約書で要確認）。</p>
+    <table>
+      <thead>
+        <tr>
+          <th>想定内容</th>
+          <th>税別の月額目安（ざっくり）</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">ライト</th>
+          <td>問い合わせ窓口、月数回の軽微なテキスト差し替え・リンク修正、CMS操作の質問対応など　→　<strong>約1万〜3万円／月</strong></td>
+        </tr>
+        <tr>
+          <th scope="row">スタンダード</th>
+          <td>上記に加え、定期的なCMS更新支援、プラグイン／CMSの更新作業、軽微なレイアウト調整（契約内工数）　→　<strong>約3万〜10万円／月</strong></td>
+        </tr>
+        <tr>
+          <th scope="row">しっかり</th>
+          <td>複数サイト、更新頻度が高い、優先対応・定例ミーティング、月の作業時間枠（何時間まで等）を明記　→　<strong>約10万〜30万円／月</strong></td>
+        </tr>
+        <tr>
+          <th scope="row">大規模・SLA重視</th>
+          <td>障害時の迅速対応、開発者アサイン、小改修を継続的に含むなど　→　<strong>約30万〜100万円／月超</strong>の例もある</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="note">インフラをクラウドで自社契約し、制作会社は<strong>保守・更新のみ</strong>の場合、月額は下がりやすい一方、サーバー障害の切り分けは契約で決める必要があります。<strong>セキュリティパッチ・バックアップ・SSL更新</strong>が月額に含まれるかは必ず見積もり・契約書で確認してください。</p>
+
+    <p class="note" style="margin-top:2rem;">
+      <a href="../index.html">一覧へ</a>
+      ／
+      <a href="../シティーグループ/city_index.html">シティーグループの参考資料へ</a>
+    </p>
+    <p class="note" style="margin-top:1rem;">本資料は公開Webページの構成・文言から整理したものであり、内部のCMS・サーバー構成・契約サービスは推定を含みます。§3・§4・§6のページ／スコープ別の金額は<strong>税別・概算</strong>であり、§7・§8と同様に正式な見積もり・契約金額ではありません。行の合計と§7の総額が一致しない場合は、共通デザイン・CMS一括・重複除去を想定してください。正式見積もり前にクライアントへ「KAISERと同程度の2サイト構成にするか／1サイトに統合するか」を確認すると工数の幅を絞りやすい。</p>
+  </article>
+</body>
+</html>

@@ -1,0 +1,557 @@
+@media screen and (max-width: 768px){
+    
+	
+	/*========= ナビゲーションのためのCSS ===============*/
+
+	#sp-gnav{
+		position:fixed;
+		z-index: 998;
+		/*ナビのスタート位置と形状*/
+		top:0;
+		right: -120%;
+		width:100%;
+		height: 100vh;/*ナビの高さ*/
+		/*動き*/
+		transition: all 0.3s;
+		background:var(--beige);
+		/*background-position: center top;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-image: url("https://citygroup-s.com/control/img/top_curriculum_bg.png");*/
+	}
+	
+	/*アクティブクラスがついたら位置を0に*/
+	#sp-gnav.panelactive{
+		right: 0;
+	}
+
+	/*ナビゲーションの縦スクロール*/
+	#sp-gnav.panelactive #g-nav-list{
+		/*ナビの数が増えた場合縦スクロール*/
+		position: fixed;
+		z-index: 998; 
+		width: 100%;
+		height: 100vh;/*表示する高さ*/
+		overflow: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	#sp-gnav.panelactive .h-logo-nav a{
+		width: 40px!important;
+	}
+	#sp-gnav.panelactive .h-logo-nav img{
+		width: 40px!important;
+		margin: 10px 0 0 10px;
+	}
+
+	/*========= ボタンのためのCSS ===============*/
+	.sp-gnav-btn{
+		transition: 0.5s;
+		position:relative;
+
+		cursor: pointer;
+		width: 50px;
+		height: 50px;
+       /* background-color: #EFF2F3;
+        border-radius: 100px;*/
+		z-index: 999;
+	}
+	
+	.header-nofixed .sp-gnav-btn {
+		position: absolute;
+		top: 3px;
+        right: 5px;
+	}
+/*
+	
+	#header.header-fixed.scroll-nav .sp-gnav-btn{
+        border-radius: 0;
+		top: 0;
+        right: 0;
+	}
+*/
+
+	.sp-gnav-btn span{
+		display: inline-block;
+		transition: all .4s;
+		position: absolute;
+		left: 14px;
+		height: 2px;
+		background-color: #333;
+		width: 22px;
+	}
+	
+	/*(メニュー無しver) 
+	.sp-gnav-btn span:nth-of-type(1) {
+		top: 20px; 
+	}
+	.sp-gnav-btn span:nth-of-type(2) {
+		top: 28px;
+	}
+	.sp-gnav-btn span:nth-of-type(3) {
+		top: 36px;
+	}*/
+	
+	/*(メニュー有りver) */
+	.sp-gnav-btn span:nth-of-type(1) {
+		top: 15px; 
+	}
+	.sp-gnav-btn span:nth-of-type(2) {
+		top: 24px;
+	}
+	.sp-gnav-btn span:nth-of-type(3) {
+		top: 33px;
+	}
+	
+	/*×に変化*/
+	.sp-gnav-btn.active{
+		background: #ddd;
+		border-radius: 5px;
+	}
+	.sp-gnav-btn.active span{
+	}
+	
+	/*×に変化(メニュー無しver) */	
+	.sp-gnav-btn.active span:nth-of-type(1) {
+		top: 18px;
+		left: 14px;
+		transform: translateY(6px) rotate(-45deg);
+		width: 22px;
+	}
+	.sp-gnav-btn.active span:nth-of-type(2) {
+		opacity: 0;
+	}
+	.sp-gnav-btn.active span:nth-of-type(3){
+		top: 30px;
+		left: 14px;
+		transform: translateY(-6px) rotate(45deg);
+		width: 22px;
+	}
+	
+	/*×に変化(メニュー有りver) 
+	.sp-gnav-btn.active span:nth-of-type(1) {
+		top: 15px;
+		left: 18px;
+		transform: translateY(6px) rotate(-45deg);
+		width: 40%;
+	}
+	.sp-gnav-btn.active span:nth-of-type(2) {
+		opacity: 0;
+	}
+	.sp-gnav-btn.active span:nth-of-type(3){
+		top: 27px;
+		left: 18px;
+		transform: translateY(-6px) rotate(45deg);
+		width: 40%;
+	}*/
+	
+	/*** menu-txt **
+	.sp-gnav-btn .menu-txt{
+		font-family: 'Lato', sans-serif;
+		font-size: 1.4rem;
+		font-weight: 700;
+		line-height: 1;
+		color: #fff;
+		letter-spacing: 0;
+		text-align: center;
+		padding: 36px 0 0;
+		left: 0.05em;		
+	}
+
+	.sp-gnav-btn.active .menu-txt{
+		color: #00A1E9;
+	}*/
+
+	
+	/*	spナビ
+	---------------------*/
+	
+	/*ナビゲーション*/
+	#sp-gnav .main-li {
+		width: 100%;
+		padding: 20px 20px 300px 20px;
+	}
+
+    /*デザイン*/		
+	#header #g-nav-list .main-nav {
+		box-shadow: 7px 8px 20px 0px rgb(167 167 167 / 20%);
+		display: block;
+		background: #fff url("https://citygroup-s.com/control/img/sitemap_icon_yellow.png") no-repeat right 20px center / 15px auto;
+		margin: 0 auto 10px;
+		font-size: 1.6rem;
+		line-height: 1.5;
+		font-weight: 500;
+        border-radius: 5px;
+        width: 100%;
+		position: relative;
+	}
+        
+	#header #g-nav-list .main-nav a {
+		display: flex;
+        padding:5px;
+		align-items: center;
+		background: #fff;
+		position: relative;
+		border-radius: 5px;
+	}
+	#header #g-nav-list .main-nav a::before{
+		position: absolute;
+        display: inline-block;
+        margin: 0 20px 0 0;
+        font-family: "FontAwesome";
+        content: "\f105";
+        font-size: 1.4rem;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+		color: var(--gold);
+	}
+       
+	#header #g-nav-list .main-nav a {
+		margin: 0 0 0 0;
+		display: block;
+
+	}
+	#header #g-nav-list .main-nav a{
+		display: flex;
+	}
+	#header #g-nav-list .main-nav a img{
+		object-fit: cover;
+		display: block;
+		width: 80px;
+		height: 70px;
+		margin: 0 10px 0 0;
+		border-radius: 5px;
+			}
+	#header #g-nav-list .drawer-dropdown {
+		box-shadow: 7px 8px 20px 0px rgb(167 167 167 / 20%);
+		background-color: #fff;
+        border-radius: 5px;
+		margin: 0 auto 10px;
+		display: block;
+		position: relative;
+	}
+	#header #g-nav-list .drawer-dropdown .toggle-title{
+		display: flex;
+		padding: 5px;
+		align-items: center;
+		position: relative;
+	}
+	#header #g-nav-list .drawer-dropdown .toggle-title img{
+		object-fit: cover;
+        display: block;
+        width: 80px;
+        height: 70px;
+        margin: 0 10px 0 0;
+		border-radius: 5px;
+	}
+        
+	#header #g-nav-list .drawer-dropdown .dd-nav {
+		font-size: 1.8rem;
+		line-height: 1.5;
+		font-weight: 500;
+		display: block;
+		position: relative;
+		padding:15px;
+	}
+	
+    #header #g-nav-list .sub-nav{
+        width: 100%;
+    }
+    
+	#header #g-nav-list .sub-nav a {
+		display: block;
+		font-size: 1.5rem;
+		padding: 15px 0;
+        border-bottom: 1px dashed #fff;
+		font-weight: bold;
+		position: relative;
+	}
+	
+	#header #g-nav-list .sub-nav a::before {
+		position: absolute;
+		display: inline-block;
+		margin: 0 8px 0 0;
+		font-family: "FontAwesome";
+		content: "\f105";
+		font-size: 1.4rem;
+		color: var(--gold);
+		top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+	}
+    		
+    /*!------------------------------------*\
+        drawer dropdown 2階層目
+    \*!------------------------------------*/
+	
+    .drawer-dropdown-menu {
+		display: none;
+		box-sizing: border-box;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		transition: .3s all;
+    }
+
+    .drawer-dropdown-menu > li {
+      width: 100%;
+      list-style: none;
+    }
+
+    /*! open */
+    .drawer-dropdown.active .drawer-dropdown-menu {
+		display: block;
+		padding: 0 10px 5px;
+    }
+
+	.drawer-nav .drawer-dropdown{
+		position: relative;
+	}
+	.drawer-dropdown .drawer-caret {
+		color: #FABF10;
+	}
+	.drawer-dropdown .drawer-caret::after {
+		content: "\f067";
+		font-family: FontAwesome;
+		position: absolute;
+		right: 20px;
+		font-size: 1.6rem;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		line-height: 57px;
+	}
+	.drawer-dropdown.open .drawer-caret::after {
+		content: "\f068";
+	}
+		
+	.drawer-dropdown-menu .drawer-dropdown-menu-item {
+		padding: 20px 0 20px 90px;
+		width: 100%;
+		display: block;
+		border-top: dashed #ddd 1px;
+		background-position: left center;
+		background-size: auto 50px;
+		background-repeat: no-repeat;
+		position: relative;
+	}
+	.drawer-dropdown-menu .drawer-dropdown-menu-item::before{
+		content: '';
+		position: absolute;
+		width: 80px;
+		height: 50px;
+		left: 0;
+		background: url("../img/premier-sapporo.jpg") no-repeat center center / cover;
+
+		top: 50%;
+		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+	}
+	.drawer-dropdown-menu .drawer-dropdown-menu-item.bellve-sapporo::before{
+		background: url("../img/bellve-sapporo.jpg") no-repeat center center / cover;
+	}
+	.drawer-dropdown-menu .drawer-dropdown-menu-item.laputa-sapporo::before{
+		background: url("../img/laputa-sapporo.jpg") no-repeat center center / cover;
+	}
+	.drawer-dropdown-menu .drawer-dropdown-menu-item.over-lounge-club::before{
+		background: url("../img/over-lounge-club.jpg") no-repeat center center / cover;
+	}
+	.drawer-dropdown-menu .drawer-dropdown-menu-item.gs-bar::before{
+		background: url("../img/gs-bar.jpg") no-repeat center center / cover;
+	}
+	.drawer-dropdown-menu .drawer-dropdown-menu-item.premier-hakodate::before{
+		background: url("../img/premier-hakodate.jpg") no-repeat center center / cover;
+	}
+	.drawer-dropdown-menu .drawer-dropdown-menu-item.premier-kisarazu::before{
+		background: url("../img/premier-kisarazu.jpg") no-repeat center center / cover;
+	}
+	.drawer-dropdown-menu .drawer-dropdown-menu-item.lavieenrose-kimitsu::before{
+		background: url("../img/lavieenrose-kimitsu.jpg") no-repeat center center / cover;
+	}
+	.drawer-dropdown-menu .drawer-dropdown-menu-item.belle-lounge-ginza::before{
+		background: url("../img/belle-lounge-ginza.jpg") no-repeat center center / cover;
+	}
+	.drawer-dropdown-menu .drawer-dropdown-menu-item.belle-lounge-okinawa::before{
+		background: url("../img/belle-lounge-okinawa.jpg") no-repeat center center / cover;
+	}
+	
+	.drawer-dropdown-menu .drawer-dropdown-menu-item a::before{
+		position: absolute;
+		display: inline-block;
+		margin: 0 0 0 0;
+		font-family: "FontAwesome";
+		content: "\f105";
+		font-size: 1.4rem;
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		color: var(--gold);
+	}
+	.drawer-dropdown-menu .drawer-dropdown-menu-item p {
+		font-size: 1.5rem;
+		font-weight: 500;
+		line-height: 1.4;
+		padding: 0 15px 0 0;
+	}
+	
+	
+	.menu-container .shop-block{
+		margin: 0 0 0;
+		display: block;
+	}
+	
+	.menu-container .shop-block .area-name{
+		position: relative;
+	}
+	.menu-container .shop-block .area-name span{
+		background: #fff;
+        display: inline-block;
+        position: relative;
+        padding: 0 10px 0 0;
+	}
+	.menu-container .shop-block .area-name::before{
+		position: absolute;
+		content: "";
+		top: 50%;
+		width: 100%;
+		height: 1px;
+		background-color: #333;
+	}
+	.menu-container .shop-block .sp-flex{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.menu-container .shop-block .box{
+		border-radius: 10px;
+		margin: 0 10px 10px 0;
+		width: calc((100% / 2) - 5px);
+		/*min-width: 162.5px;*/
+		background: #EEE7DE;
+		position: relative;
+	}
+	.menu-container .shop-block .box:hover{
+		top: 0;
+	}
+	.menu-container .shop-block .box:nth-child(even){
+		margin: 0 0 10px;
+	}
+
+	.menu-container .shop-block .box a{
+			display: block;
+		padding: 8px;
+	}
+
+	.menu-container .shop-block .box a > div{
+		position: initial;
+	}
+	.menu-container .shop-block .box a > div::before{
+	}
+	.menu-container .shop-block .box .img{
+		margin: 0;
+	}
+	.menu-container .shop-block .box figure{
+		border-radius: 5px;
+		width: 100%;
+	}
+	.menu-container .shop-block .box img{
+		margin: 0;
+		width: 100%;
+		height: 100px;
+		object-fit: cover;
+		border-radius: 5px;
+	}
+
+	.menu-container .shop-block .box a > div.txt-box::before{
+		content: '';
+		position: absolute;
+		width: 40px;
+		height: 24px;
+		z-index: 2;
+		right: 5px;
+		top: 11px;
+		background: url("../img/premier-sapporo-logo.png") no-repeat top center / contain;
+	}
+
+	.menu-container .shop-block .box.bellve-sapporo a > div.txt-box::before{
+		background: url("../img/bellve-sapporo-logo.png") no-repeat top center / contain;
+	}
+	.menu-container .shop-block .box.laputa-sapporo a > div.txt-box::before{
+		background: url("../img/laputa-sapporo-logo.png") no-repeat top center / contain;
+	}
+	.menu-container .shop-block .box.belle-lounge-sapporo a > div.txt-box::before{
+		background: url("../img/belle-lounge-sapporo-logo.png") no-repeat top center / contain;
+	}
+	.menu-container .shop-block .box.gs-bar a > div.txt-box::before{
+		background: url("../img/gs-bar-logo.png") no-repeat top center / contain;
+			width: 40px;
+			height: 24px;
+	}
+	.menu-container .shop-block .box.premier-hakodate a > div.txt-box::before{
+		background: url("../img/premier-hakodate-logo.png") no-repeat top center / contain;
+	}
+	.menu-container .shop-block .box.premier-kisarazu a > div.txt-box::before{
+		background: url("../img/premier-kisarazu-logo.png") no-repeat top center / contain;
+	}
+	.menu-container .shop-block .box.lavieenrose-kimitsu a > div.txt-box::before{
+		background: url("../img/lavieenrose-kimitsu-logo.png") no-repeat top center / contain;
+			width: 40px;
+			height: 15px;
+			top: 15px;
+	}
+	.menu-container .shop-block .box.belle-lounge-ginza a > div.txt-box::before{
+		background: url("../img/belle-lounge-ginza-logo.png") no-repeat top center / contain;
+	}	
+	.menu-container .shop-block .box.belle-lounge-okinawa a > div.txt-box::before{
+		background: url("../img/belle-lounge-okinawa-logo.png") no-repeat top center / contain;
+	}
+	
+	
+	.menu-container .shop-block .box a > div.txt-box::after{
+		content: '';
+		position: absolute;
+		background: #EEE7DE;
+		padding: 10px;
+		top: 0;
+		right: 0;
+		z-index: 1;
+		width: 30px;
+        height: 20px;
+		border-radius: 0 10px 0 5px;
+	}
+
+	.menu-container .shop-block .box .area{
+		display: none;
+	}
+
+	.menu-container .shop-name{
+		padding: 5px 0 0;
+	}
+	.menu-container .shop-name-en{
+		font-size: 1.4rem;
+	}
+	.menu-container .shop-name-jp{
+		font-size: 1.5rem;
+		padding: 0px 0 0;
+	}
+	.menu-container .catch-s{
+		display: none;
+	}
+	.menu-container .button-icon-wrap{
+		left: auto;
+		right: 5px;
+        bottom: 5px;
+		position: absolute;
+		font-size: 1.2rem;
+	}
+	
+	
+}

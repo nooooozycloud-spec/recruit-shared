@@ -1,0 +1,1023 @@
+@charset "utf-8";
+
+/* -----------------------------------------------------------
+    共通
+-------------------------------------------------------------- */
+.page-company .bread-h1-wrap {
+	padding-bottom: 60px;
+}
+
+.company-area{
+	margin: 20px 0 150px;
+}
+
+@media screen and (max-width: 768px) {
+	.page-company .bread-h1-wrap {
+		padding-bottom: 0;
+	}
+	.company-area{
+		margin: 0 0 80px;
+	}
+}
+
+
+
+/* -----------------------------------------------------------
+    企業情報　理念
+-------------------------------------------------------------- */
+
+.page-company .company-philosophy-ttl {
+	display: inline-block;
+	color: transparent;
+	font-size: 3.8rem;
+	font-weight: bold;
+	margin: 40px auto 0 0;
+	font-feature-settings: "palt";
+}
+
+.page-company .company-philosophy-ttl .ja {
+	color: #8d363b;
+	font-weight: 600;
+	font-size: 2.5rem;
+}
+
+.page-company .philosophy-img {
+	width: 800px;
+	margin: 50px 0 0 0;
+}
+
+.page-company .philosophy-img img {
+	width: 100%;
+}
+
+.page-company .company-philosophy-txt {
+	margin: 35px 0 0 0;
+	line-height: 2.8;
+	letter-spacing: .02em;
+}
+
+.page-company .company-philosophy-box .list-box-wrap {
+	margin: 15px 0 0 0;
+}
+
+.page-company .company-philosophy-box .list-box-wrap .list-box:last-child {
+	margin-top: 40px;
+}
+
+.page-company .company-philosophy-box .list-box-ttl {
+	align-items: center;
+	display: flex;
+	font-size: 2.1rem;
+	font-weight: 600;
+}
+
+.page-company .company-philosophy-box .list-box-ttl .number {
+	margin: 2px 15px 0 5px;
+	font-size: 1.8rem;
+}
+
+.page-company .company-philosophy-box .list-box-txt {
+	font-size: 1.7rem;
+	margin: 20px 0 0 0;
+}
+
+.page-company .company-philosophy-btmtxt {
+	margin: 40px 0 0 0;
+}
+
+
+@media screen and (max-width: 768px){
+	
+	.page-company .company-philosophy-ttl {
+		margin: 25px auto 20px;
+		padding: 0;
+		line-height: 1.4;
+		font-size: 2rem;
+		width: 100%;
+	}
+	
+	.page-company .company-philosophy-ttl::before {
+		font-size: 2.5rem;
+		top: -25px;
+	}
+	
+	.page-company .company-philosophy-ttl .ja {
+		font-size: 2rem;
+	}
+	
+	.page-company .company-philosophy-txt {
+		margin: 0;
+		padding: 0;
+		line-height: 2;
+	}
+	
+	.page-company .company-philosophy-txt::before {
+		left: 18px;
+	}
+	
+	.page-company .company-philosophy-txt::after {
+		left: 18px;
+	}
+	
+	.page-company .company-philosophy-txt p {
+		font-size: 1.6rem;
+		line-height: 1.7;
+	}
+	
+	.page-company .company-philosophy-box .list-box-ttl .number {
+		font-size: 1.6rem;
+	}
+	
+	.page-company .company-philosophy-box .list-box-ttl {
+		font-size: 1.8rem;
+	}
+	
+	.page-company .company-philosophy-box .list-box-txt {
+		font-size: 1.6rem;
+		margin: 15px 0 0 0;
+	}
+	
+	.page-company .company-philosophy-box .list-box-wrap .list-box:last-child {
+		margin-top: 30px;
+	}
+	
+	.page-company .philosophy-img {
+		width: 100%;
+		margin: 30px 0 0 0;
+	}
+
+}
+
+
+/* -----------------------------------------------------------
+    企業情報　代表メッセージ
+-------------------------------------------------------------- */
+.message-txt-wrap {
+	margin: 30px 0 0 0;
+}
+
+.page-company .message-txt p {
+	margin: 0 0 30px 0;
+	line-height: 2.2;
+	letter-spacing: .03em;
+	font-size: 2rem;
+}
+
+.page-company .message-txt.txt-btm {
+	display: flex;
+}
+
+.page-company .message-photo-wrap {
+	flex-shrink: 0;
+	width: 230px;
+	margin: 0 0 0 50px;
+	text-align: center;
+}
+
+.page-company .message-photo-wrap .name {
+	font-family: '游明朝','Yu Mincho', '游明朝体', 'YuMincho', 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'ＭＳ Ｐ明朝', 'MS PMincho', serif;
+	font-weight: bold;
+	font-size: 2.3rem;
+	color: #000!important;
+	margin: 5px 0 0 0;
+}
+
+.page-company .message-photo-wrap .name span {
+	font-size: 1.5rem;
+	margin: 0 10px 0 0;
+}
+
+.page-company .message-photo-wrap img {
+	width: 100%;
+}
+
+.page-company .message-photo {
+	width: 500px;
+	position: relative;
+}
+
+.page-company .message-photo img {
+	width: 100%;
+}
+
+.page-company .message-btm-wrap {
+	align-items: flex-end;
+	display: flex;
+	justify-content: space-between;
+	margin: 50px 0 0 0;
+}
+
+.page-company .message-name {
+	margin: 0 0 10px 0;
+	text-align: right;
+}
+
+.page-company .message-name .name02 {
+	margin: 10px 0 0 0;
+}
+
+.page-company .message-name .name02 span {
+	display: block;
+}
+
+.page-company .message-name .name03 {
+	font-size: 2rem;
+	margin: 10px 0 0 0;
+}
+
+.page-company .message-name .name03 span {
+	font-size: 1.8rem;
+	margin: 0 15px 0 0;
+ }
+
+.page-company .splide{
+	margin: 30px 0 0;
+}
+.page-company .splide img{
+	width: 300px;
+}
+
+@media screen and (max-width: 768px) {
+	
+	.page-company .message-photo-wrap {
+		margin: 10px auto 0;
+		max-width: 230px;
+		width: 100%;
+	}
+	
+	.message-txt-wrap {
+		margin: 30px 0 0 0;
+	}
+	
+	.page-company .message-txt.txt-btm {
+		display: block;
+	}
+	
+	.page-company .message-txt p {
+		margin: 15px 0 0 0;
+		line-height: 2;
+		font-size: 1.6rem;
+	}
+
+	.page-company .message-name {
+		margin: 0 0 0 20px;
+		text-align: left;
+	}
+	
+	.page-company .message-btm-wrap {
+		display: block;
+		margin: 20px 0 0 0;
+	}
+	
+	.page-company .message-photo {
+		width: 100%;
+	}
+	
+	.page-company .message-name {
+		margin: 20px 0 0 0;
+	}
+	
+	.page-company .message-name .name02 {
+		font-size: 1.5rem;
+		margin: 5px 0 0 0;
+	}
+	
+	.page-company .message-name .name03 {
+		font-size: 1.8rem;
+		margin: 5px 0 0 0;
+	}
+	
+	.page-company .message-name .name03 span {
+		font-size: 1.6rem;
+	}
+
+}
+
+
+
+/* -----------------------------------------------------------
+    企業情報　会社概要
+-------------------------------------------------------------- */
+.page-company .overview-area ul.cmn-list{
+	padding: 0;
+}
+
+.page-company .overview-area ul.cmn-list li:first-child {
+	padding: 0 0 0 20px;
+}
+
+.page-company .overview-area ul.cmn-list li:first-child::before {
+	top: 10px;
+}
+
+.page-company .overview-area .item-tel {
+	line-height: 1.8;
+}
+
+.page-company .overview-area .item-tel .sub {
+	color: #9f9f5a;
+	font-size: 1.5rem;
+}
+
+.page-company .overview-area .item-tel .tel-txt02 {
+	margin: 20px 0 0 0;
+}
+
+
+@media screen and (max-width: 768px){
+	
+	.page-company .overview-area ul.cmn-list li:first-child {
+		padding: 0 0 0 20px;
+	}
+	
+	.page-company .overview-area .item-tel .sub {
+		display: block;
+		font-size: 1.4rem;
+		line-height: 1.5;
+	}
+	
+	.page-company .overview-area .item-tel .num {
+		font-size: 1.5rem;
+	}
+	
+}
+
+
+/* -----------------------------------------------------------
+    企業情報　営業所一覧・アクセス
+-------------------------------------------------------------- */
+.office-area .office-item-inner {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0 35px 0;
+	border-bottom: 1px solid #d5d1ce;
+	padding: 0 0 35px 0;
+}
+
+.office-area .office-list .office-item:first-child {
+	margin-top: 40px;
+}
+
+.office-area .office-item iframe {
+	width: 500px;
+	height: 250px;
+	flex-shrink: 0;
+}
+
+.office-area .office-item .elements {
+	padding: 0 20px 0 0;
+}
+
+.office-area .office-item .name {
+	color: var(--gold);
+	font-size: 2rem;
+	font-weight: bold;
+	font-family: var(--notoserif);
+}
+
+.office-area .office-item .name i {
+	margin: 0 5px 0 0;
+}
+
+.office-area .office-item .address {
+	margin: 20px 0 0 0;
+	letter-spacing: .03em;
+	font-family: var(--notoserif);
+}
+
+.office-area .office-item .tel {
+	margin: 10px 0 0 0;
+	letter-spacing: .03em;
+	font-family: var(--notoserif);
+}
+
+@media screen and (max-width: 768px) {
+	
+	.office-area .office-item-inner {
+		display: block;
+		margin: 0 0 15px 0;
+		padding: 0 0 25px 0;
+	}
+	.office-area .office-list .office-item:first-child{
+		margin: 20px 0 0;
+	}
+	.office-area .office-item .elements {
+		padding: 10px 0 0 0;
+	}
+	
+	.office-area .office-item .name {
+		font-size: 2rem;
+	}
+	
+	.office-area .office-item .address {
+		margin: 15px 0 0 0;
+	}
+	
+	.office-area .office-item iframe {
+		width: 100%;
+		height: 250px;
+		margin: 20px 0 0 0;
+	}
+	
+	
+}
+
+
+/* -----------------------------------------------------------
+    企業情報　取引実績
+-------------------------------------------------------------- */
+
+.Achievements-txt-wrap {
+    margin: 30px 0;
+}
+
+.Achievements-txt-wrap .box-list{
+	display: flex;
+	justify-content: flex-start;
+	gap: 0 62px;
+	flex-wrap: wrap;
+}
+
+.Achievements-txt-wrap .box-list .item{
+	width: 242px;
+	flex-shrink: 0;
+}
+
+.Achievements-txt-wrap .box-list .item dl{
+	margin: 0 0 30px;
+}
+
+.Achievements-txt-wrap .box-list .item dl dt{
+	position: relative;
+	padding: 0 0 0 20px;
+	line-height: 1.8rem;
+}
+
+.Achievements-txt-wrap .box-list .item dl dt::before{
+	content: "・";
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    color: #f39800;
+}
+
+/* .Achievements-txt-wrap .box-list{
+	width: 100%;
+	min-width: 600px;
+	overflow-x: scroll;
+}
+.Achievements-txt-wrap .box-list dl dt{
+	flex-shrink: 0;
+} */
+
+/* .Achievements-txt-wrap .box-list dl {
+	display: flex;
+	flex-wrap: wrap;
+    width: 30%;
+} */
+
+.Achievements-txt-wrap .box p{
+	padding: 0 0 0 5px;
+}
+
+@media screen and (max-width: 768px){
+
+	.Achievements-txt-wrap{
+		overflow: auto;
+	}
+
+	.Achievements-txt-wrap .box-list{
+		width: 100%;
+		flex-wrap: unset;
+		gap: 0 30px;
+	}
+
+	.Achievements-txt-wrap .box-list .item dl{
+		margin: 0 0 15px;
+	}
+
+	.company-common .Achievements-area .company-ttl-wrap {
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+
+
+}
+
+
+
+
+
+/* -----------------------------------------------------------
+    企業情報　SDGSの取り組み
+-------------------------------------------------------------- */
+.sdgs-txt-wrap {
+	margin: 30px 0 0;
+}
+
+.sdgs-group-wrap {
+	margin: 0 0 0 0;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.sdgs-group {
+	padding: 30px 20px;
+	width: calc((100% / 2) - 10px);
+	background: #fff0d7;
+	margin: 20px 0 0;
+}
+
+.sdgs-ttl {
+	font-size: 2.2rem;
+	font-weight: bold;
+	color: #f39800;
+	letter-spacing: .03em;
+}
+
+.sdgs-flex {
+	display: block;
+}
+
+.sdgs-img-flex {
+	display: flex;
+	padding: 30px 0 20px;
+	width: 100%;
+	justify-content: center;
+}
+
+.sdgs-img-flex img{
+	margin: 0;
+	width: calc( ( 100% - 20px ) / 3 );
+	height: auto;
+}
+
+.sdgs-img-flex img:nth-of-type(2) {
+	margin: 0 10px;
+}
+
+.sdg-note {
+	letter-spacing: .05em;
+	line-height: 2;
+}
+
+.sdgs-txt.txt-top {
+	line-height: 2;
+	letter-spacing: .03em;
+	margin: 40px 0 0 0;
+}
+
+@media screen and (max-width: 1400px){
+	.sdgs-img-flex img{
+		width: 116px;
+		height: 100%;
+	}
+}
+
+@media screen and (max-width: 768px){
+	
+	.company-common .sdgs-area .company-ttl-wrap {
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+	.sdgs-txt-wrap {
+		margin: 20px 0 0;
+	}
+	
+	.sdgs-img-flex {
+		justify-content: center;
+		gap: 10px;
+		flex-wrap: wrap;
+		min-width: initial;
+		padding: 20px 0 0 0;
+	}
+	
+	.sdgs-img-flex img{
+		width: 90px;
+	}
+	
+	.sdgs-ttl {
+		font-size: 2.0rem;
+	}
+	
+	.sdgs-ttl:before {
+		vertical-align: sub;
+	}
+	
+	.sdgs-flex {
+		flex-wrap: wrap;
+		gap: 0;
+	}
+	
+	.sdgs-txt.txt-top {
+		margin: 30px 0 0 0;
+	}
+	
+	.sdgs-group-wrap {
+		display: block;
+		margin: 0 0 0 0;
+		padding: 0 15px;
+	}
+	
+	.sdgs-group {
+		width: 100%;
+		padding: 20px 15px;
+	}
+	
+	.sdg-note {
+		margin: 15px 0 0 0;
+	}
+}
+-------------------------------------------------
+    company-common    company配下 共通
+-------------------------------------------------------------- */
+/*セクションタイトル*/
+.company-common .company-ttl-wrap {
+	display: flex;
+	padding: 0 0 15px 0;
+	position: relative;
+	border-bottom: solid 1px var(--purple);
+
+}
+
+.company-common .company-ttl {
+	display: flex;
+	align-items: baseline;
+	gap: 20px;
+}
+
+
+
+/* キャッチ */
+.company-common .cmn-catch {
+	font-size: 4rem;
+	font-weight: 600;
+	line-height: 1.6;
+	letter-spacing: .07em;
+	padding: 25px 0 20px;
+}
+
+/* テキスト */
+.company-common .cmn-txt {
+	font-size: 1.7rem;
+	font-weight: 400;
+	line-height: 2.8;
+	margin: 40px 0 0 0;
+}
+
+
+/* テーブル */
+.company-common table{
+	width: 100%;
+	border-collapse: collapse;
+	line-height: 1.6;
+	margin: 10px 0 40px;
+}
+
+.company-common table tr{
+	border-bottom:1px solid #d5d1ce;
+}
+
+.company-common table th{
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+	padding: 25px 0 25px 30px;
+	width: 180px;
+	font-family: var(--notoserif);
+}
+
+.company-common table td{
+	padding: 25px;
+	font-family: var(--notoserif);
+}
+
+/* リスト */
+.company-common ul.cmn-list{
+	padding: 0 0 0 30px;
+}
+
+.company-common ul.cmn-list li {
+    line-height: 1.6;
+	position: relative;
+	padding: 10px 0 0 20px;
+}
+
+.company-common ul.cmn-list li::before {
+    content: "";
+	position: absolute;
+	top: 22px;
+	left: 5px;
+	width: 5px;
+	height: 5px;
+	border-radius: 50px;
+	background: #a6a64f;
+}
+
+
+/*company-wrap*/
+.company-common .company-wrap {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.company-common .company-contents {
+	width: 850px;
+	margin: 0 0 100px;
+}
+
+/*company-nav*/
+.company-common .company-nav {
+	width: 300px;
+}
+
+.company-common .company-nav.is-opacity {
+	opacity: 0;
+}
+
+.company-common .company-nav-inner {
+	transition: all .3s;
+	width: 300px;
+}
+
+.company-common .company-nav-bigitem.current-ttl,
+.company-common .company-nav-bigitem.link-ttl {
+	background: #eae7e4;
+	font-size: 1.8rem;
+	font-weight: 500;
+}
+
+.company-common .company-nav-bigitem.current-ttl {
+padding: 20px 0 20px;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    font-size: 1.8rem;
+    font-family: var(--syne);
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    background: var(--gold);
+    border-radius: 5px 5px 0 0;
+}
+
+.company-nav-biglist .company-nav-bigitem.current-menu {
+	background: #f8f8f6;
+	background:rgba(255,255,255,.6);
+	border: none;
+}
+.company-nav-biglist .company-nav-bigitem.current-menu ul{
+	background: #f5f5f5;
+	border-radius: 5px;
+	padding: 0 0 20px;
+}
+
+.company-common .company-nav-bigitem a {
+	letter-spacing: .07em;
+	position: relative;
+}
+
+.company-common .company-nav-bigitem .current-ttl-inner {
+	letter-spacing: .07em;
+	position: relative;
+	font-weight: bold;
+}
+
+.company-common .company-nav-bigitem.link-ttl a {
+	align-items: center;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	padding: 0 0 0 50px;
+	line-height: 1.3;
+}
+
+.company-common .company-nav-bigitem.link-ttl a::before {
+	background: url("https://citygroup-s.com/control/img/cmn-arrow-red.png")center center/contain no-repeat;
+	content: "";
+	position: absolute;
+	top: 53%;
+	-webkit-transform : translateY(-50%);
+	transform : translateY(-50%);
+	left: 30px;
+	height: 15px;
+	width: 7px;
+	z-index: 1;
+}
+.company-common .company-nav-list li {
+	padding: 35px 0 0 30px;
+	position: relative;
+	font-family: var(--notoserif);
+}
+
+.company-common .company-nav-list li:first-child {
+	padding-top: 25px;
+}
+
+.company-common .company-nav-list li:last-child {
+	padding-bottom: 10px;
+}
+
+.company-common .company-nav-list a {
+	transition: all .5s;
+	position: relative;
+	font-size: 1.7rem;
+	padding: 0 0 0 5px;
+}
+
+.company-common .company-nav-list a::before {
+	background-color: var(--gold);
+	content: "";
+	height: 3px;
+	left: -12px;
+	position: absolute;
+	width: 10px;
+	top: 55%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+/*pc only*/
+@media screen and (min-width: 769px) {
+
+	/*js*/
+	.company-common .is-fix {
+		position: fixed;
+		top: 120px;
+	}
+	
+	.company-common .is-opacity {
+		opacity: 0;
+		display: none;
+	}
+	
+	.company-common .company-nav-item.current a {
+		color: #10a758;
+	}
+
+	.company-common .company-nav-item.current a::before {
+		background-color: #10a758!important;
+	}
+}
+
+
+@media screen and (max-width: 768px){
+	
+	.company-common .company-ttl-wrap {
+		padding: 20px 0 10px 0;
+	}
+	
+	.company-common .company-ttl-wrap::before {
+		height: 4px;
+	}
+	
+	.company-common .company-ttl-wrap::after {
+		height: 4px;
+	}
+    
+    .company-common .company-ttl {
+        flex-wrap: wrap;
+        gap: 0 20px;
+    }
+
+	.company-common .company-ttl-en::before {
+		width: 18px;
+	}
+	
+	.company-common .company-ttl-en {
+		font-size: 2rem;
+	}
+	
+	.company-common .company-ttl-ja {
+		color: #646c66;
+		font-size: 1.6rem;
+		padding: 7px 0 0 0;
+		line-height: 1.3;
+	}
+	
+	.company-common .cmn-catch {
+		font-size: 2.4rem;
+		letter-spacing: .05em;
+		padding: 15px 0 15px;
+	}
+	
+	.company-common .cmn-txt {
+		font-size: 1.6rem;
+		margin: 15px 0 0 0;
+		line-height: 2;
+	}
+	
+	.company-common table{
+		display: block;
+		margin: 20px 0 30px;
+	}
+    
+    .company-common iframe{
+		width: 100%;
+        height: 250px;
+	}
+	
+	.company-common tbody {
+		display: block;
+	}
+	
+	.company-common tr {
+		display: block;
+	}
+	
+	.company-common table th{
+		padding: 15px 0 8px 0;
+		display: block;
+		width: auto;
+	}
+	
+	.company-common table td{
+		padding: 15px;
+		padding: 0 15px 15px 15px;
+		display: block;
+	}
+	
+	.company-common ul.cmn-list{
+		padding: 0;
+	}
+	
+	.company-common ul.cmn-list li {
+		padding: 10px 0 0 20px;
+	}
+	
+	.company-common ul.cmn-list li::before {
+		top: 22px;
+		left: 5px;
+	}
+	
+	
+	/*アンカーリンクのずれ調整*/
+	.company-common div[class*="-block"] {
+		margin-top: -57px;
+		padding-top: 57px;
+	}
+	
+	.company-common .company-wrap {
+		display: block;
+		padding: 0;
+	}
+	
+	.company-common .company-contents {
+		width: 100%;
+		margin: 0 0 50px;
+	}
+	
+	.company-common .company-nav {
+		display: none!important;
+	}
+	
+	.company-common .company-nav-inner {
+		width: 100%;
+	}
+	
+	.company-common .company-nav-bigitem.current-ttl,
+	.company-common .company-nav-bigitem.link-ttl {
+		font-size: 1.6rem;
+		border: none;
+		margin: 0 0 5px;
+		height: 70px;
+	}
+	
+	.company-common .company-nav-bigitem.current-ttl {
+		display: none;
+	}
+	
+	.company-common .company-nav-bigitem.link-ttl a {
+		padding: 20px 0 20px 45px;
+		background: #f0f0f0;
+	}
+	.company-common .company-nav-bigitem.link-ttl a::before {
+		left: 20px;
+		top: 52%;
+	}
+	
+	.company-common .company-nav-list li {
+		font-size: 1.6rem;
+	}
+
+}
+
+
+/* -----------------------------------------------------------
+    共通 
+-------------------------------------------------------------- */
+/*一つ目コンテンツ*/
+.company-common .company-contents .company-in-wrap:not(:first-of-type) {
+	margin: 100px 0 0 0;
+}
+
+@media screen and (max-width: 768px){
+	.company-common .company-contents .company-in-wrap:not(:first-of-type) {
+		margin:40px 0 0 0;
+	}
+}
+

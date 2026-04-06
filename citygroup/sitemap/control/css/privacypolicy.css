@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+
+/* -----------------------------------------------------------
+    プライバシーポリシー
+-------------------------------------------------------------- */
+.privacypolicy-area {
+	line-height: 1.8;
+    padding: 0 100px 0;
+    margin: 100px auto 200px;
+    max-width: 1200px;
+}
+
+.privacypolicy-area .txt-top {
+	margin: 0 0 20px;
+		font-family: var(--notoserif);
+
+}
+
+.privacypolicy-area .section-catch {
+    margin: 50px 0 25px;
+	font-size: 2rem;
+	border-bottom: solid 1px var(--gold);
+	color: var(--gold);
+		font-family: var(--notoserif);
+
+}
+.privacypolicy-area .section-catch.t {
+    margin: 0 0 15px;
+}
+.privacypolicy-area .privacy-title {
+    font-weight: bold;
+	font-size: 1.8rem;
+    margin: 40px 0 10px;
+}
+.privacypolicy-area .basic-txt {
+	font-size: 1.6rem;
+}
+
+.privacypolicy-area .col-list{
+	border-top: none;
+	margin: 10px 0 0;
+}
+.privacypolicy-area .col-list li{
+	padding: 0 0 10px 15px;
+	border-bottom: none;
+	display: inline-block;
+    width: 100%;
+	font-family: var(--notoserif);
+}
+.privacypolicy-area .col-list li::before{
+	top: -5px;
+}
+
+.col-list li span{
+    font-weight: 600;
+    color: #4A79B0;
+    margin: 0 8px;
+}
+
+.privacypolicy-area .demi li {
+	list-style: decimal;
+	margin: 10px 0 0 17px;
+	line-height: 1.8;
+}
+
+.ttl-s{
+    font: 500 1.7rem / 1.2 var(--notoserif);
+    letter-spacing: 2px;
+    margin: 15px auto 10px;
+}
+
+.frame{
+    border: 1px solid var(--lightgray);
+    padding: 10px 20px 10px;
+    width: fit-content;
+    margin: 10px auto 10px 0;
+		font-family: var(--notoserif);
+
+}
+
+.last{
+    margin: 40px auto 0 0;
+}
+
+@media screen and (max-width: 768px){
+	.page-title-area .en{
+		font-size: 4.6rem;
+	}
+    .privacypolicy-area {
+        padding: 0 20px 0;
+        margin: 50px auto 80px;
+    }
+
+    .privacypolicy-area .txt-top {
+        margin: 0;
+    }
+
+	.privacypolicy-area .section-catch {
+		font-size: 2rem;
+		margin: 30px 0 10px;
+	}
+
+    .privacypolicy-area .privacy-title {
+        margin: 20px 0 5px;
+    }
+	
+	.frame{
+		padding: 10px 0;
+	}
+}
+

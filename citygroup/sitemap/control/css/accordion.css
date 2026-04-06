@@ -1,0 +1,74 @@
+.accordion ul {
+	width:100%;
+	padding:0;
+}
+
+.accordion ul li a {
+	display: block;
+	text-decoration: none;
+	cursor: pointer;
+	position: relative;
+}
+
+.accordion > ul > li .catbox {
+	display: none;
+}
+
+.accordion-icon,
+.accordion-icon span {
+	display: inline-block;
+	transition: all .3s;
+	box-sizing: border-box;
+}
+.accordion-icon {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 50%;
+	right: 20px;
+	z-index: 1;
+}
+.accordion-icon span {
+	position: absolute;
+    width: 100%;
+	height: 2px;
+    background-color: var(--gold);
+}
+.accordion-icon span:nth-of-type(1) {
+	transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+.accordion-icon span:nth-of-type(2) {
+	transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+.active .accordion-icon span:nth-of-type(1) {
+	display:none;
+}
+.active .accordion-icon span:nth-of-type(2) {
+	transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+@media screen and (max-width: 768px){
+	
+	.accordion ul li a {
+		padding: 0;
+	}
+
+	.accordion-icon {
+		width: 15px;
+        height: 15px;
+        right: 15px;
+	}
+		
+}

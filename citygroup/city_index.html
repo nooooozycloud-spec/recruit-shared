@@ -15,21 +15,27 @@
       --accent: #2d4a55;
       --bg: #fafafa;
     }
+    html {
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+    }
     * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Noto Sans CJK JP", Meiryo, sans-serif;
-      font-size: 15px;
+      font-size: clamp(14px, 2.8vw, 15px);
       line-height: 1.75;
       color: var(--text);
       background: var(--bg);
+      overflow-x: hidden;
     }
     .sheet {
       max-width: 1180px;
       margin: 0 auto;
-      padding: 2.5rem 1.5rem 3rem;
+      padding: clamp(1.5rem, 5vw, 2.5rem) max(1rem, env(safe-area-inset-left)) calc(2.5rem + env(safe-area-inset-bottom)) max(1rem, env(safe-area-inset-right));
       background: #fff;
       min-height: 100vh;
+      min-height: 100dvh;
       box-shadow: 0 0 0 1px var(--border);
     }
     @media print {
@@ -37,9 +43,16 @@
       .sheet { box-shadow: none; padding: 1rem; }
       a { color: inherit; text-decoration: none; }
       .nav-doc { display: none; }
+      .table-scroll { overflow: visible !important; }
+      .table-scroll--wide table { min-width: 0 !important; width: 100% !important; }
     }
     .nav-doc {
-      font-size: 0.88rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.25rem 0.35rem;
+      font-size: clamp(0.82rem, 2.5vw, 0.88rem);
+      line-height: 1.5;
       margin: 0 0 1.25rem;
       padding: 0.65rem 0.9rem;
       background: #f0f4f6;
@@ -51,40 +64,64 @@
     .nav-doc .nav-sep { color: var(--muted); margin: 0 0.4rem; }
     .nav-current { font-weight: 600; color: var(--accent); }
     h1 {
-      font-size: 1.35rem;
+      font-size: clamp(1.05rem, 3.8vw, 1.35rem);
       font-weight: 700;
       margin: 0 0 0.25rem;
       color: var(--accent);
       border-bottom: 2px solid var(--accent);
       padding-bottom: 0.5rem;
+      line-height: 1.4;
+      word-break: break-word;
     }
     .meta {
-      font-size: 0.85rem;
+      font-size: clamp(0.8rem, 2.5vw, 0.85rem);
       color: var(--muted);
-      margin-bottom: 2rem;
+      margin-bottom: clamp(1.25rem, 4vw, 2rem);
     }
     h2 {
-      font-size: 1.05rem;
-      margin: 2rem 0 0.75rem;
+      font-size: clamp(0.98rem, 3vw, 1.05rem);
+      margin: clamp(1.5rem, 4vw, 2rem) 0 0.75rem;
       padding-left: 0.5rem;
       border-left: 4px solid var(--accent);
+      line-height: 1.35;
+      word-break: break-word;
     }
     h3 {
-      font-size: 0.95rem;
+      font-size: clamp(0.88rem, 2.6vw, 0.95rem);
       margin: 1.25rem 0 0.5rem;
       color: var(--muted);
       font-weight: 600;
+      line-height: 1.4;
     }
     p { margin: 0.5rem 0; }
+    .table-scroll {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin: 0.75rem 0;
+      border-radius: 4px;
+      outline: none;
+    }
+    .table-scroll:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
     table {
       width: 100%;
       border-collapse: collapse;
-      font-size: 0.92rem;
-      margin: 0.75rem 0;
+      font-size: clamp(0.85rem, 2.4vw, 0.92rem);
+      margin: 0;
+    }
+    .table-scroll--wide table {
+      min-width: 640px;
+    }
+    @media (min-width: 900px) {
+      .table-scroll--wide table { min-width: 0; width: 100%; }
     }
     th, td {
       border: 1px solid var(--border);
-      padding: 0.5rem 0.65rem;
+      padding: clamp(0.4rem, 1.5vw, 0.5rem) clamp(0.45rem, 1.8vw, 0.65rem);
       text-align: left;
       vertical-align: top;
     }
@@ -102,14 +139,20 @@
     @media (max-width: 900px) {
       .col-design, .col-system { white-space: normal; }
     }
+    @media (max-width: 480px) {
+      th:first-child:not(.col-no):not(.col-page),
+      td:first-child { min-width: 5rem; }
+    }
     .col-no { width: 2.5rem; text-align: center; }
     .note {
-      font-size: 0.88rem;
+      font-size: clamp(0.82rem, 2.4vw, 0.88rem);
       color: var(--muted);
       background: #f7f8fa;
-      padding: 0.75rem 1rem;
+      padding: clamp(0.65rem, 2vw, 0.75rem) clamp(0.75rem, 2.5vw, 1rem);
       border-radius: 4px;
       margin-top: 0.75rem;
+      line-height: 1.65;
+      word-break: break-word;
     }
     a { color: #0b57d0; }
     td a { word-break: break-all; }
@@ -129,6 +172,7 @@
     <p class="meta">用途：キャバクラ求人サイト制作の見積もり・要件整理　／　公開Web情報に基づく整理（2026年4月時点）</p>
 
     <h2>1. 概要</h2>
+    <div class="table-scroll" role="region" aria-label="概要">
     <table>
       <tr>
         <th>運営</th>
@@ -143,9 +187,11 @@
         <td>「世界の夜はシティーグループ」「リゾキャバ・外キャバ」など、<strong>海外・リゾート・高収入・教育／福利厚生</strong>を前面に出したランディング型の採用コンテンツ。</td>
       </tr>
     </table>
+    </div>
     <p class="note">KAISERのようにスタッフ用とキャスト用で<strong>ドメインが完全分離</strong>されているのではなく、<strong>国内は1ドメイン内の採用LP＋エントリー</strong>、<strong>海外・沖縄は別ドメインの専用サイト</strong>という構成が特徴。見積もりでは「国内LPの1本化」「グローバルサイトの多言語・エリア別CMS」を切り分けると工数が見えやすい。</p>
 
     <h2>2. ドメイン・役割一覧</h2>
+    <div class="table-scroll" role="region" aria-label="ドメイン・役割一覧">
     <table>
       <tr>
         <th>URL</th>
@@ -172,10 +218,12 @@
         <td><strong>海外・沖縄（リゾキャバ／外キャバ）</strong>向け採用サイト。エリア別下層、初めての方向け、インタビュー、FAQ、お知らせ等</td>
       </tr>
     </table>
+    </div>
 
     <h2>3. citygroup-s.com/recruit/（国内キャスト採用LP）の構成</h2>
     <h3>主なブロック・機能</h3>
     <p class="meta" style="margin:-0.25rem 0 0.75rem;">各行は<strong>税別・概算</strong>。1ページにセクションが縦に積まれるLP想定。共通ヘッダー／フッター、CMS横断は別途。</p>
+    <div class="table-scroll table-scroll--wide" role="region" aria-label="国内キャスト採用LPの構成" tabindex="0">
     <table>
       <thead>
         <tr>
@@ -231,8 +279,10 @@
         </tr>
       </tbody>
     </table>
+    </div>
 
     <h3>採用エントリー（/entry/）</h3>
+    <div class="table-scroll table-scroll--wide" role="region" aria-label="採用エントリー" tabindex="0">
     <table>
       <thead>
         <tr>
@@ -253,10 +303,12 @@
         </tr>
       </tbody>
     </table>
+    </div>
 
     <h2>4. recruit.citygroup-global.com（海外・沖縄）の構成</h2>
     <h3>主なページ・機能</h3>
     <p class="meta" style="margin:-0.25rem 0 0.75rem;">各行は<strong>税別・概算</strong>。エリアページは<strong>テンプレ1エリアあたり</strong>の目安。多言語化の有無で実装が大きく変動。</p>
+    <div class="table-scroll table-scroll--wide" role="region" aria-label="海外・沖縄サイトの構成" tabindex="0">
     <table>
       <thead>
         <tr>
@@ -361,9 +413,11 @@
         </tr>
       </tbody>
     </table>
+    </div>
     <p class="note">国内サイトとグローバルサイトで<strong>LINEのURL・計測タグが別</strong>になる場合、運用ルールを揃えるか分けるかで工数・契約が変わる。</p>
 
     <h2>5. 技術・コンプライアンス（見積もりで確認すべき項目）</h2>
+    <div class="table-scroll" role="region" aria-label="技術・コンプライアンス">
     <table>
       <thead>
         <tr>
@@ -405,9 +459,11 @@
         </tr>
       </tbody>
     </table>
+    </div>
 
     <h2>6. 見積もり用スコープ分解（参考）</h2>
     <p class="meta" style="margin:0 0 0.75rem;">ブロック単位の<strong>税別・概算</strong>。セクション3・4の行別目安と<strong>単純合算は一致しない</strong>（重複除去・セット割・CMS一括を想定）。</p>
+    <div class="table-scroll table-scroll--wide" role="region" aria-label="見積もり用スコープ分解" tabindex="0">
     <table>
       <thead>
         <tr>
@@ -450,9 +506,11 @@
         </tr>
       </tbody>
     </table>
+    </div>
 
     <h2>7. 制作費用の目安（デザイン〜システム実装〜公開）</h2>
     <p>シティーグループ級（<strong>国内採用LP＋グローバル採用サイト</strong>）をデザインから実装・公開まで外注する場合の、日本市場でよくある<strong>税別・概算レンジ</strong>です。</p>
+    <div class="table-scroll" role="region" aria-label="制作費用の目安">
     <table>
       <thead>
         <tr>
@@ -475,10 +533,12 @@
         </tr>
       </tbody>
     </table>
+    </div>
     <p class="note">サーバー・ドメイン・メール従量、翻訳費、撮影・ライティング別途などは別枠になりやすい。金額を左右しやすい要因は、<strong>グローバル側のページ数・言語数</strong>、<strong>国内の店舗数と更新頻度</strong>、<strong>2ドメインの計測・運用を誰が持つか</strong>です。</p>
 
     <h2>8. 制作会社への管理・運用費用の月額目安</h2>
     <p>公開後に制作会社へ支払う、管理・保守・軽微な更新の<strong>月額契約</strong>の目安です（KAISER資料の区分と同様）。</p>
+    <div class="table-scroll" role="region" aria-label="月額目安">
     <table>
       <thead>
         <tr>
@@ -505,6 +565,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
     <p class="note" style="margin-top:2rem;">
       <a href="../index.html">一覧へ</a>
       ／

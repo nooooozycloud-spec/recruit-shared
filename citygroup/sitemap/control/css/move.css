@@ -1,0 +1,393 @@
+
+
+:root {
+	--page-padding: 1.5rem;
+	--color-text: #fff;
+	--color-bg: #12100e;
+	--color-link: rgba(255,255,255,0.6);
+	--color-link-hover: #fff;
+	--color-bg-1: #2f251e;
+	--color-bg-2: #43392f;a
+	--color-bg-3: var(--color-bg-1);
+	--color-bg-4: var(--color-bg-2);
+	--color-bg-5: var(--color-bg-1);
+	--color-bg-6: var(--color-bg-2);
+}
+
+
+/* Page Loader */
+.js .loading::before,
+.js .loading::after {
+	content: '';
+	position: fixed;
+	z-index: 5000;
+}
+
+.js .loading::before {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--color-bg);
+}
+
+.js .loading::after {
+	top: 50%;
+	left: 50%;
+	width: 60px;
+	height: 60px;
+	margin: -30px 0 0 -30px;
+	border-radius: 50%;
+	opacity: 0.4;
+	background: var(--color-link);
+	animation: loaderAnim 0.7s linear infinite alternate forwards;
+}
+
+@keyframes loaderAnim {
+	to {
+		opacity: 1;
+		transform: scale3d(0.5,0.5,1);
+	}
+}
+
+
+
+.content {
+	padding: var(--page-padding);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.content--perspective {
+	perspective-origin: 50% 0%;
+	perspective: 1000px;
+}
+
+.text-large {
+	font-size: clamp(1.5rem,5vw,3rem);
+	max-width: 900px;
+	margin: 0 0 0.85em 0;
+	line-height: 1.2;
+	font-variation-settings: "slnt" 0, "wdth" 100, "wght" 500, "INKT" 100;
+}
+
+.content--sticky {
+	width: 99vw;
+	position: sticky;
+	top: 0;
+	--offset: 0px;
+	top: var(--offset);
+	height: calc(100vh - var(--offset));
+}
+
+.content--grid,
+.content--grid .content__inner {
+	display: grid;
+	overflow: hidden;
+	grid-column-gap: 5vw;
+	grid-row-gap: 2vh;
+	align-content: center;
+	grid-template-areas: 'content-img' 'content-title' 'content-text';
+	justify-items: center;
+}
+
+.content--grid:has(.content__inner) {
+	display: block;
+	padding: 0;
+}
+
+.content__inner {
+	width: 100%;
+	height: 100%;
+	border-radius: 0 0 2rem 2rem;
+}
+
+.content--card {
+	display: flex;
+	flex-direction: column;
+	height: 80vh;
+	width: 95vw;
+	max-width: 500px;
+	aspect-ratio: 0.8;
+	top: 10vh;
+	margin: auto;
+	border-radius: 14px;
+	gap: 3vh;
+	text-align: center;
+	margin-bottom: 5vh;
+}
+
+.content--card .content__title {
+	font-size: clamp(1.5rem,4vw,3.5rem);
+}
+
+.content--card .content__title i {
+	display: block;
+}
+
+.content--half {
+	display: flex;
+	flex-direction: column;
+	gap: 3vh;
+	text-align: center;
+}
+
+.content--half:nth-child(odd) {
+	margin-left: auto;
+}
+
+.content__img {
+	grid-area: content-img;
+	width: 50%;
+	max-width: 300px;
+	height: auto;
+}
+
+.content__img--large {
+	width: 60%;
+	height: auto;
+}
+
+.content__img--small {
+	height: 35%;
+	width: auto;
+}
+
+.spacer {
+	margin-top: 20vh;
+}
+
+.content__title {
+	grid-area: content-title;
+	letter-spacing: -0.095em;
+	text-transform: uppercase;
+	line-height: 1;
+	font-weight: normal;
+	font-size: clamp(2rem,6vw,5rem);
+	margin: 0;
+	font-variation-settings: "slnt" 0, "wdth" 400, "wght" 900, "INKT" 400;
+}
+
+.content__text {
+	margin: 0;
+	max-width: 500px;
+	grid-area: content-text;
+	text-align: center;
+	line-height: 1.5;
+	padding: 0 1rem;
+	backface-visibility: hidden;
+}
+
+.content__text--narrow {
+	max-width: 300px;
+}
+
+.content--intro {
+	padding-top: 25vh;
+	padding-bottom: 25vh;
+	z-index: 2;
+}
+
+.content--outro {
+	padding-top: 50vh;
+	padding-bottom: 30vh;
+}
+
+.bg-1 { 
+	background: url("../img/premier-sapporo-img01.jpg") no-repeat top center / cover;
+}
+.bg-2 { 
+	background: url("../img/premier-sapporo-img02.jpg") no-repeat top center / cover;
+}
+.bg-3 { 
+	background: url("../img/premier-sapporo-img03.jpg") no-repeat top center / cover;
+}
+.bg-4 { 
+	background: url("../img/premier-sapporo-img04.jpg") no-repeat top center / cover;
+}
+.bg-5 { 
+	background: url("../img/premier-sapporo-img05.jpg") no-repeat top center / cover;
+}
+.bg-6 { 
+	background: url("../img/premier-sapporo-img06.jpg") no-repeat top center / cover;
+}
+
+.bellve-sapporo .bg-1 { 
+	background: url("../img/bellve-sapporo-img01.jpg") no-repeat center center / cover;
+}
+.bellve-sapporo .bg-2 { 
+	background: url("../img/bellve-sapporo-img02.jpg") no-repeat bottom center / cover;
+}
+.bellve-sapporo .bg-3 { 
+	background: url("../img/bellve-sapporo-img03.jpg") no-repeat bottom center / cover;
+}
+.bellve-sapporo .bg-4 { 
+	background: url("../img/bellve-sapporo-img04.jpg") no-repeat bottom center / cover;
+}
+.bellve-sapporo .bg-5 { 
+	background: url("../img/bellve-sapporo-img05.jpg") no-repeat bottom center / cover;
+}
+
+.laputa-sapporo .bg-1 { 
+	background: url("../img/laputa-sapporo-img01.jpg") no-repeat center center / cover;
+}
+.laputa-sapporo .bg-2 { 
+	background: url("../img/laputa-sapporo-img02.jpg") no-repeat bottom center / cover;
+}
+.laputa-sapporo .bg-3 { 
+	background: url("../img/laputa-sapporo-img03.jpg") no-repeat bottom center / cover;
+}
+.laputa-sapporo .bg-4 { 
+	background: url("../img/laputa-sapporo-img04.jpg") no-repeat center center / cover;
+}
+.laputa-sapporo .bg-5 { 
+	background: url("../img/laputa-sapporo-img05.jpg") no-repeat center center / cover;
+}
+.laputa-sapporo .bg-6 { 
+	background: url("../img/laputa-sapporo-img06.jpg") no-repeat center center / cover;
+}
+
+.over-lounge-club .bg-1 { 
+	background: url("../img/over-lounge-club-img01.jpg") no-repeat center center / cover;
+}
+.over-lounge-club .bg-2 { 
+	background: url("../img/over-lounge-club-img02.jpg") no-repeat center center / cover;
+}
+.over-lounge-club .bg-3 { 
+	background: url("../img/over-lounge-club-img03.jpg") no-repeat center center / cover;
+}
+
+.gs-bar .bg-1 { 
+	background: url("../img/gs-bar-img01.jpg") no-repeat center center / cover;
+}
+.gs-bar .bg-2 { 
+	background: url("../img/gs-bar-img02.jpg") no-repeat center center / cover;
+}
+.gs-bar .bg-3 { 
+	background: url("../img/gs-bar-img03.jpg") no-repeat center center / cover;
+}
+.gs-bar .bg-4 { 
+	background: url("../img/gs-bar-img04.jpg") no-repeat center center / cover;
+}
+.gs-bar .bg-5 { 
+	background: url("../img/gs-bar-img05.jpg") no-repeat center center / cover;
+}
+.gs-bar .bg-6 { 
+	background: url("../img/gs-bar-img06.jpg") no-repeat center center / cover;
+}
+
+.premier-hakodate .bg-1 { 
+	background: url("../img/premier-hakodate-img01.jpg") no-repeat center center / cover;
+}
+.premier-hakodate .bg-2 { 
+	background: url("../img/premier-hakodate-img02.jpg") no-repeat bottom center / cover;
+}
+.premier-hakodate .bg-3 { 
+	background: url("../img/premier-hakodate-img03.jpg") no-repeat bottom center / cover;
+}
+.premier-hakodate .bg-4 { 
+	background: url("../img/premier-hakodate-img04.jpg") no-repeat center center / cover;
+}
+.premier-hakodate .bg-5 { 
+	background: url("../img/premier-hakodate-img05.jpg") no-repeat center center / cover;
+}
+
+.premier-kisarazu .bg-1 { 
+	background: url("../img/premier-kisarazu-img01.jpg") no-repeat center center / cover;
+}
+.premier-kisarazu .bg-2 { 
+	background: url("../img/premier-kisarazu-img02.jpg") no-repeat bottom center / cover;
+}
+.premier-kisarazu .bg-3 { 
+	background: url("../img/premier-kisarazu-img03.jpg") no-repeat bottom center / cover;
+}
+.premier-kisarazu .bg-4 { 
+	background: url("../img/premier-kisarazu-img04.jpg") no-repeat center center / cover;
+}
+.premier-kisarazu .bg-5 { 
+	background: url("../img/premier-kisarazu-img05.jpg") no-repeat center center / cover;
+}
+.premier-kisarazu .bg-6 { 
+	background: url("../img/premier-kisarazu-img06.jpg") no-repeat center center / cover;
+}
+
+.lavieenrose-kimitsu .bg-1 { 
+	background: url("../img/lavieenrose-kimitsu-img01.jpg") no-repeat center center / cover;
+}
+.lavieenrose-kimitsu .bg-2 { 
+	background: url("../img/lavieenrose-kimitsu-img02.jpg") no-repeat bottom center / cover;
+}
+.lavieenrose-kimitsu .bg-3 { 
+	background: url("../img/lavieenrose-kimitsu-img03.jpg") no-repeat bottom center / cover;
+}
+
+.belle-lounge-ginza .bg-1 { 
+	background: url("../img/belle-lounge-ginza-img01.jpg") no-repeat center center / cover;
+}
+.belle-lounge-ginza .bg-2 { 
+	background: url("../img/belle-lounge-ginza-img02.jpg") no-repeat bottom center / cover;
+}
+.belle-lounge-ginza .bg-3 { 
+	background: url("../img/belle-lounge-ginza-img03.jpg") no-repeat bottom center / cover;
+}
+.belle-lounge-ginza .bg-4 { 
+	background: url("../img/belle-lounge-ginza-img04.jpg") no-repeat center center / cover;
+}
+.belle-lounge-ginza .bg-5 { 
+	background: url("../img/belle-lounge-ginza-img05.jpg") no-repeat bottom center / cover;
+}
+.belle-lounge-ginza .bg-6 { 
+	background: url("../img/belle-lounge-ginza-img06.jpg") no-repeat bottom center / cover;
+}
+.belle-lounge-ginza .bg-7 { 
+	background: url("../img/belle-lounge-ginza-img07.jpg") no-repeat bottom center / cover;
+}
+.belle-lounge-ginza .bg-8 { 
+	background: url("../img/belle-lounge-ginza-img08.jpg") no-repeat bottom center / cover;
+}
+
+
+
+#wrapper{
+	overflow: inherit;
+}
+
+@media screen and (min-width: 63em) {
+
+
+	.content--grid .content__title {
+		align-self: end;
+	}
+
+	.content--grid,
+	.content--grid .content__inner {
+		grid-template-areas: 'content-img content-title' 'content-img content-text';
+		grid-template-columns: 30% 1fr;
+		justify-items: start;
+	}
+	.content__img--large {
+		width: 160%;
+	}
+	.content__img--left {
+		justify-self: end;
+	}
+	.content__text--left {
+		text-align: left;
+		align-self: start;
+	}
+	.content--card {
+		width: 50vw;
+	}
+	.content--half {
+		width: 50%;
+	}
+}
+
+
+@media screen and (max-width: 768px){
+	.content--sticky{
+		height: 50vh;
+	}
+}
